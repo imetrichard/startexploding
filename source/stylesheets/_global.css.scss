@@ -29,7 +29,6 @@ strong {
   margin-top: 15px;
 
   h1 {
-    background-color: $color-black;
     background-color: rgba(0, 0, 0, 0.75);
     color: $color-white;
     display: inline-block;
@@ -102,3 +101,12 @@ ins {
   color: #000;
   text-decoration: none;
 }
+
+a {
+  text-decoration: none;
+}
+
+/* The Magnificent Clearfix: nicolasgallagher.com/micro-clearfix-hack/ */
+.clearfix:before, .clearfix:after { content: ""; display: table; }
+.clearfix:after { clear: both; }
+.clearfix { zoom: 1; }
