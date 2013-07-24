@@ -1,0 +1,23 @@
+// Color Settings
+$color-yellow: #F8F4C4;
+$color-buff: #D8A276;
+$color-peach: #CF5A60;
+$color-plum: #883959;
+$color-violet: #2A3759;
+$color-gray: #DDDDDD;
+$color-white: #eeeeee;
+$color-black: #2d2d2d;
+
+// Header Styles
+.bar  {
+  margin-top: 25px;
+  padding: 10px;
+  background-color: rgba(0, 0, 0, 0.75);
+  color: $color-white;
+  display: inline-block;
+}
+
+// Custom Fonts
+body, p, h1, h2, h3 {
+  font-family: 'Lato', sans-serif;
+}

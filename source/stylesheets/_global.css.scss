@@ -1,0 +1,104 @@
+h1, h2, h3, h4 {
+  text-transform: uppercase;
+  font-weight: normal;
+  letter-spacing: 0.1em;
+  margin: 0;
+  padding: 5px 20px;
+}
+
+// Killing padding issues on nav bar
+.name {
+  h1 {
+    padding: 0 !important;
+  }
+}
+
+h1 {
+  font-size: 52px;
+}
+
+h1.subheader {
+  margin: 0;
+}
+
+strong {
+  font-weight: 900;
+}
+
+.title {
+  margin-top: 15px;
+
+  h1 {
+    background-color: $color-black;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: $color-white;
+    display: inline-block;
+    margin: 10px;
+  }
+
+  h2 {
+    background-color: $color-black;
+    color: $color-white;
+    display: inline-block;
+  }
+}
+
+i {
+  font-size: 18px;
+}
+
+// Fixes issues with repeating background-images for gradients
+
+html {
+  height: 100%;
+}
+body {
+  height: 100%;
+  margin: 0;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+body#root  {
+  background-color: $color-yellow; /* fallback color if gradients are not supported */
+  background: url("/images/bg.jpg") no-repeat center center fixed;
+}
+
+body#resume  {
+  background-color: $color-buff; /* fallback color if gradients are not supported */
+  background-image: -webkit-linear-gradient(top, $color-buff, $color-peach); /* For Chrome and Safari */
+  background-image:    -moz-linear-gradient(top, $color-buff, $color-peach); /* For old Fx (3.6 to 15) */
+  background-image:     -ms-linear-gradient(top, $color-buff, $color-peach); /* For pre-releases of IE 10*/
+  background-image:      -o-linear-gradient(top, $color-buff, $color-peach); /* For old Opera (11.1 to 12.0) */
+  background-image:         linear-gradient(to bottom, $color-buff, $color-peach); /* Standard syntax; must be last */
+  background: url("/images/resume-bg.jpg") no-repeat center center fixed;
+}
+
+body#portfolio  {
+  background-color: $color-peach; /* fallback color if gradients are not supported */
+  background-image: -webkit-linear-gradient(top, $color-peach, $color-plum); /* For Chrome and Safari */
+  background-image:    -moz-linear-gradient(top, $color-peach, $color-plum); /* For old Fx (3.6 to 15) */
+  background-image:     -ms-linear-gradient(top, $color-peach, $color-plum); /* For pre-releases of IE 10*/
+  background-image:      -o-linear-gradient(top, $color-peach, $color-plum); /* For old Opera (11.1 to 12.0) */
+  background-image:         linear-gradient(to bottom, $color-peach, $color-plum);; /* Standard syntax; must be last */
+}
+
+body#contact  {
+  background-color: $color-plum; /* fallback color if gradients are not supported */
+  background-image: -webkit-linear-gradient(top, $color-plum, $color-violet); /* For Chrome and Safari */
+  background-image:    -moz-linear-gradient(top, $color-plum, $color-violet); /* For old Fx (3.6 to 15) */
+  background-image:     -ms-linear-gradient(top, $color-plum, $color-violet); /* For pre-releases of IE 10*/
+  background-image:      -o-linear-gradient(top, $color-plum, $color-violet); /* For old Opera (11.1 to 12.0) */
+  background-image:         linear-gradient(to bottom, $color-plum, $color-violet); /* Standard syntax; must be last */
+  background: url("/images/contact-bg.jpg") no-repeat bottom center fixed;
+}
+
+ul {
+  list-style: none;
+}
+
+ins {
+  background-color: #f9fc3d;
+  color: #000;
+  text-decoration: none;
+}

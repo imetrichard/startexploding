@@ -1,0 +1,124 @@
+#resume {
+  height: 100%;
+  min-height: 1825px;
+
+  .title {
+    margin-top: 50px;
+    text-align: right;
+    margin-right: 69px;
+
+    .button {
+      padding: 10px 20px;
+    }
+  }
+
+  .skills, .work, .education, .projects {
+    margin-left: 35px;
+    display: inline-block;
+    vertical-align: top;
+    margin-bottom: 35px;
+
+    .clear {
+      background-color: rgba(0, 0, 0, 0);
+      padding: 0;
+    }
+
+    .title {
+      margin-left: 0;
+    }
+
+    h3 {
+      font-size: 21px;
+      width: 450px;
+      padding: 0;
+      color: #f8f8ff;
+    }
+  }
+
+  h2 {
+    padding: 0px 25px;
+    margin-bottom: 25px;
+  }
+
+  span.subheader {
+    line-height: 4;
+    color: #f8f8ff;
+  }
+
+  article {
+    padding: 30px;
+    background-color: rgba(0, 0, 0, 0.75);
+    color: $color-white;
+    display: block;
+    width: 500px;
+
+    h3 {
+      padding: 0;
+
+      a {
+        display: block;
+      }
+    }
+  }
+
+  .projects {
+    margin: 45px 0 0 0;
+  }
+
+  .tags{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    margin-right: 25px;
+
+    li, .tag {
+      float: left;
+      height: 35px;
+      line-height: 24px;
+      position: relative;
+      font-size: 21px;
+      margin-top: 15px;
+    }
+
+    .tag {
+      margin-left: 20px;
+      padding: 0 10px 0 12px;
+      background: rgba(0, 0, 0, 0.75);
+      color: #fff;
+      text-decoration: none;
+      border-radius: 0 4px 4px 0;
+      line-height: 30px;
+      line-height: 1.5;
+
+      &:before{
+        content: "";
+        float: left;
+        position: absolute;
+        top: 0;
+        left: -12px;
+        width: 0;
+        height: 0;
+        border-color: transparent rgba(0, 0, 0, 0.75) transparent transparent;
+        border-style: solid;
+        border-width: 17px 12px 18px 0;
+      }
+
+      &:after{
+        content: "";
+        position: absolute;
+        top: 15px;
+        left: 0;
+        float: left;
+        width: 4px;
+        height: 4px;
+        -moz-border-radius: 2px;
+        -webkit-border-radius: 2px;
+        border-radius: 2px;
+        background: #fff;
+        -moz-box-shadow: -1px -1px 2px #004977;
+        -webkit-box-shadow: -1px -1px 2px #004977;
+        box-shadow: -1px -1px 2px #004977;
+      }
+    }
+  }
+}

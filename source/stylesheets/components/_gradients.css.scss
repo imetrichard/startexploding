@@ -1,0 +1,38 @@
+//.gradient {
+//  width: 25%;
+//  height: 20px;
+//  float: right;;
+//
+//  &.grad1 {
+//    background-color: $white; /* fallback color if gradients are not supported */
+//    background-image: -webkit-linear-gradient(right, $yellow, $buff); /* For Chrome and Safari */
+//    background-image:    -moz-linear-gradient(right, $yellow, $buff); /* For old Fx (3.6 to 15) */
+//    background-image:     -ms-linear-gradient(right, $yellow, $buff); /* For pre-releases of IE 10*/
+//    background-image:      -o-linear-gradient(right, $yellow, $buff); /* For old Opera (11.1 to 12.0) */
+//    background-image:         linear-gradient(to left, $yellow, $buff); /* Standard syntax; must be last */
+//  }
+//  &.grad2 {
+//    background-color: $white; /* fallback color if gradients are not supported */
+//    background-image: -webkit-linear-gradient(right, $buff, $peach); /* For Chrome and Safari */
+//    background-image:    -moz-linear-gradient(right, $buff, $peach); /* For old Fx (3.6 to 15) */
+//    background-image:     -ms-linear-gradient(right, $buff, $peach); /* For pre-releases of IE 10*/
+//    background-image:      -o-linear-gradient(right, $buff, $peach); /* For old Opera (11.1 to 12.0) */
+//    background-image:         linear-gradient(to left, $buff, $peach); /* Standard syntax; must be last */
+//  }
+//  &.grad3 {
+//    background-color: $white; /* fallback color if gradients are not supported */
+//    background-image: -webkit-linear-gradient(right, $peach, $plum); /* For Chrome and Safari */
+//    background-image:    -moz-linear-gradient(right, $peach, $plum); /* For old Fx (3.6 to 15) */
+//    background-image:     -ms-linear-gradient(right, $peach, $plum); /* For pre-releases of IE 10*/
+//    background-image:      -o-linear-gradient(right, $peach, $plum); /* For old Opera (11.1 to 12.0) */
+//    background-image:         linear-gradient(to left, $peach, $plum); /* Standard syntax; must be last */
+//  }
+//  &.grad4 {
+//    background-color: $white; /* fallback color if gradients are not supported */
+//    background-image: -webkit-linear-gradient(right, $plum, $violet); /* For Chrome and Safari */
+//    background-image:    -moz-linear-gradient(right, $plum, $violet); /* For old Fx (3.6 to 15) */
+//    background-image:     -ms-linear-gradient(right, $plum, $violet); /* For pre-releases of IE 10*/
+//    background-image:      -o-linear-gradient(right, $plum, $violet); /* For old Opera (11.1 to 12.0) */
+//    background-image:         linear-gradient(to left, $plum, $violet); /* Standard syntax; must be last */
+//  }
+//}
