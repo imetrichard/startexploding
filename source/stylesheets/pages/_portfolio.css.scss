@@ -1,16 +1,63 @@
 #portfolio {
+  height: 100%;
+  min-height: 2300px;
+
+  .title {
+    text-align: center;
+
+    h1 {
+      padding: 5px 25px;
+      margin: 0;
+    }
+  }
+
   #container {
+    position: relative;
     .item {
       background-color: #4682b4;
       margin: 10px;
     }
+
+    .avatar {
+      background: url('/images/portfolio/avatar4.png') no-repeat center center;
+      background-size: auto 100%;
+    }
+    .slater {
+      background: url('/images/portfolio/slater1.jpg') no-repeat left center;
+      background-size: auto 100%;
+    }
+    .keiser {
+      background: url('/images/portfolio/keiser1.jpg') no-repeat center center;
+      background-size: auto 100%;
+    }
+    .search {
+      background: url('/images/portfolio/search.jpg') no-repeat right center;
+      background-size: auto 100%;
+    }
+    .htf {
+      background: url('/images/portfolio/htf1.png') no-repeat center center;
+      background-size: auto 100%;
+    }
+    .amoeba {
+      background: url('/images/portfolio/amoeba1.png') no-repeat center center;
+      background-size: auto 100%;
+    }
+    .oxford {
+      background: url('/images/portfolio/oxford1.jpg') no-repeat center center;
+      background-size: 100% auto;
+    }
+    .upload {
+      background: url('/images/portfolio/upload7.jpg') no-repeat center center;
+      background-size: auto 100%;
+    }
   }
 
   #options {
+    text-align: center;
+    margin-left: -55px;
     ul {
       display: inline-block;
-      vertical-align: middle;
-      margin-top: 25px;
+      margin-top: 5px;
     }
   }
 }

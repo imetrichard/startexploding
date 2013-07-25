@@ -1,54 +1,204 @@
 <body id="portfolio" xmlns="http://www.w3.org/1999/html">
-
-  <h1 class="bar">Portfolio</h1>
-  <br>
+  <div class="title">
+    <h1 class="bar">A Selection of My Work</h1>
+  </div>
 
   <section id="options" class="clearfix">
 
     <ul id="filters" class="option-set clearfix" data-option-key="filter">
       <li><a href="#filter" data-option-value="*" class="selected">Show All</a></li>
+      <li><a href="#filter" data-option-value=".client">Clients</a></li>
       <li><a href="#filter" data-option-value=".web">Web</a></li>
       <li><a href="#filter" data-option-value=".ux">UX/UI</a></li>
       <li><a href="#filter" data-option-value=".visual">Visual</a></li>
-      <li><a href="#filter" data-option-value=".branding">Branding</a></li>
       <li><a href="#filter" data-option-value=".mobile">Mobile</a></li>
       <li><a href="#filter" data-option-value=".print">Print</a></li>
     </ul>
-
 
   </section>
 
   <div id="container" class="clearfix">
 
-    <div class="type web">
-      <h2>Test</h2>
-      <h3>Web</h3>
+    <div class="type web amoeba">
+      <div class="info animated fadeIn">
+        <h1>Amoeba Website</h1>
+        <ul>
+          <li>Web Design</li>
+          <li>Visual Design</li>
+          <li>Front End Web Development</li>
+        </ul>
+        <p>all the design and coding was done in-house. It is a single-page HTML5/CSS3 app, which has some beautiful
+          transitions. This means it works well on tablet devices like the iPad.
+        </p>
+      </div>
     </div>
 
-    <div class="type ux">
-      <h2>Test</h2>
-      <h3>UX</h3>
+    <div class="type square client">
+      <div class="thumb">
+        <%= image_tag '/images/clients/taproot.svg' %>
+      </div>
     </div>
 
-    <div class="type visual">
-      <h2>Test</h2>
-      <h3>Visual</h3>
+    <div class="type web htf">
+      <div class="info animated fadeIn">
+        <h1>Hack The Future</h1>
+        <ul>
+          <li>Branding</li>
+          <li>Social Media</li>
+          <li>Promotional</li>
+        </ul>
+        <p>Hack the Future is a one-day party and hackathon for kids in grades 5-12. It’s a self-directed hackathon for
+          future hackers. And, it’s a unique opportunity to learn modern software and hardware design and engineering
+          from mentors in bay area startups and companies large and small. I handled the creation of branding around
+          the event as well as digital and promotional assets.</p>
+      </div>
     </div>
 
-    <div class="type branding">
-      <h2>Test</h2>
-      <h3>Branding</h3>
+    <div class="type square client">
+      <div class="thumb">
+        <%= image_tag '/images/clients/icc.svg' %>
+      </div>
     </div>
 
-    <div class="type mobile">
-      <h2>Test</h2>
-      <h3>Mobile</h3>
+    <div class="type ux keiser">
+      <div class="info animated fadeIn">
+        <h1>Keiser Product Catalogs</h1>
+        <ul>
+          <li>Visual Design</li>
+          <li>Layout</li>
+          <li>Print</li>
+        </ul>
+        <p>Short description goes here. Yadda Yadda Yadda more description here</p>
+      </div>
     </div>
 
-    <div class="type print">
-      <h2>Test</h2>
-      <h3>Print</h3>
+    <div class="type square client">
+      <div class="thumb">
+        <%= image_tag '/images/clients/oup.svg' %>
+      </div>
     </div>
+
+    <div class="type visual search">
+      <div class="info animated fadeIn">
+        <h1>Sales Territory Search</h1>
+        <ul>
+          <li>UX/UI</li>
+          <li>Web Design</li>
+        </ul>
+        <p>Worked with a startup who wished to create a disruption social network which allows salepersons to
+          anonymously leave reviews on companies they sold to and allowed others to improve their sales forecast
+          using the information. I designed a powerful search feature which allowed users to search in a variety of
+          ways including the ability to set a search territory that persisted on the user. The territory search allowed
+          salespersons to quickly set their sales territory once and use it to search their set territory on each visit.
+        </p>
+      </div>
+    </div>
+
+    <div class="type square client">
+      <div class="thumb">
+        <%= image_tag '/images/clients/sfntlogo.svg' %>
+      </div>
+    </div>
+
+    <div class="type web upload">
+      <div class="info animated fadeIn">
+        <h1>Upload / Attach Image User Flows</h1>
+        <ul>
+          <li>Web Design</li>
+          <li>UX/UI</li>
+          <li>User Flow</li>
+        </ul>
+        <p>Creation of a flow to design a complicated process of both uploading a photo and attaching already uploaded
+          photos to a page. The flow was designed to make sure the complicated process was as frictionless and
+          intuitive as possible for the user.</p>
+      </div>
+    </div>
+
+    <div class="type branding avatar">
+      <div class="info animated fadeIn">
+        <h1>Avatar Creation</h1>
+        <ul>
+          <li class="ui">UX/UI</li>
+          <li class="web">Web Design</li>
+          <li class="visual">Visual Design</li>
+        </ul>
+        <p>Short description goes here. Yadda Yadda Yadda more description here</p>
+      </div>
+    </div>
+
+    <div class="type square client">
+      <div class="thumb">
+        <%= image_tag '/images/clients/comicbooklover.png' %>
+      </div>
+    </div>
+
+    <div class="type ux oxford">
+      <div class="info animated fadeIn">
+        <h1>Oxford University Press Book Cover</h1>
+        <ul>
+          <li>Visual Design</li>
+          <li>Layout</li>
+          <li>Print</li>
+        </ul>
+        <p>Short description goes here. Yadda Yadda Yadda more description here</p>
+      </div>
+    </div>
+
+    <div class="type square client">
+      <div class="thumb">
+        <%= image_tag '/images/clients/keiser.svg' %>
+      </div>
+    </div>
+
+    <div class="type square client">
+      <div class="thumb">
+        <%= image_tag '/images/clients/amoeba.svg' %>
+      </div>
+    </div>
+
+    <div class="type square client">
+      <div class="thumb">
+        <%= image_tag '/images/clients/mozilla.svg' %>
+      </div>
+    </div>
+
+    <div class="type square client">
+      <div class="thumb">
+        <%= image_tag '/images/clients/exumit.svg' %>
+      </div>
+    </div>
+
+    <div class="type web slater">
+      <div class="info animated fadeIn">
+        <h1>TCS Center Website</h1>
+        <ul>
+          <li>Web Design</li>
+          <li>Responsive</li>
+          <li>UX/UI</li>
+          <li>Visual Design</li>
+        </ul>
+        <p>Short description goes here. Yadda Yadda Yadda more description here</p>
+      </div>
+    </div>
+
+    <div class="type square client">
+      <div class="thumb">
+        <%= image_tag '/images/clients/vulume.svg' %>
+      </div>
+    </div>
+
+    <div class="type square client">
+      <div class="thumb">
+        <%= image_tag '/images/clients/htf.svg' %>
+      </div>
+    </div>
+
+    <div class="type square client">
+      <div class="thumb">
+        <%= image_tag '/images/clients/pssf.png' %>
+      </div>
+    </div>
+
 
   </div> <!-- #container -->
 

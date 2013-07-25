@@ -1,0 +1,2 @@
+php/bin/pear install Mail
+php/bin/pear install Net_SMTP
