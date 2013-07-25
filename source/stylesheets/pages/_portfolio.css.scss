@@ -1,6 +1,6 @@
 #portfolio {
   height: 100%;
-  min-height: 2300px;
+  min-height: 2700px;
 
   .title {
     text-align: center;
@@ -47,8 +47,32 @@
       background-size: 100% auto;
     }
     .upload {
-      background: url('/images/portfolio/upload7.jpg') no-repeat center center;
+      background: url('/images/portfolio/upload1.png') no-repeat right center;
       background-size: auto 100%;
+    }
+    .icc {
+      background: url('/images/portfolio/icc1.png') no-repeat center center;
+      background-size: auto 100%;
+    }
+    .pssf {
+      background: url('/images/portfolio/pssf1.jpg') no-repeat center center;
+      background-size: auto 100%;
+    }
+    .vulume {
+      background: url('/images/portfolio/vulume2.jpg') no-repeat left center;
+      background-size: auto 100%;
+    }
+    .exumit {
+      background: url('/images/portfolio/exumit1.jpg') no-repeat left center;
+      background-size: auto 100%;
+    }
+    .sfnt {
+      background: url('/images/portfolio/sfnt1.jpg') no-repeat center center;
+      background-size: auto 100%;
+    }
+    .github {
+      background: #f4f4f4 url('/images/clients/blacktocats.svg') no-repeat center center;
+      background-size: 90%;
     }
   }
 
