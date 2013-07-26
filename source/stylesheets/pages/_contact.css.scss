@@ -21,6 +21,21 @@
   h2.bar {
     padding: 22px;
     margin-top: 15px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      color: $color-peach;
+      a, i {
+        color: $color-peach;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+      }
+    }
 
     i.icon-envelope {
       font-size: 32px;
@@ -32,6 +47,20 @@
     padding: 22px;
     margin-top: 15px;
     margin-left: 7px;
+    -webkit-transition: all 0.5s ease-in-out;
+    -moz-transition: all 0.5s ease-in-out;
+    -o-transition: all 0.5s ease-in-out;
+    transition: all 0.5s ease-in-out;
+
+    &:hover {
+      i {
+        color: $color-peach;
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
+      }
+    }
 
     &:first-child {
       margin-left: 0;
