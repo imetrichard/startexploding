@@ -1,6 +1,6 @@
 #resume {
-  height: 100%;
-  min-height: 1825px;
+  height: auto;
+  padding-bottom: 50px;
 
   .title {
     margin-top: 50px;
@@ -17,6 +17,7 @@
     display: inline-block;
     vertical-align: top;
     margin-bottom: 35px;
+    text-align: left;
 
     .clear {
       background-color: rgba(0, 0, 0, 0);
@@ -35,9 +36,10 @@
     }
   }
 
-  h2 {
-    padding: 0px 25px;
+  h2.bar {
+    padding: 22px;
     margin-bottom: 25px;
+    text-align: left;
   }
 
   span.subheader {
@@ -47,10 +49,16 @@
 
   article {
     padding: 30px;
-    background-color: rgba(0, 0, 0, 0.75);
     color: $color-white;
     display: block;
     width: 500px;
+    line-height: 1.5;
+    letter-spacing: 1px;
+    padding-bottom: 0;
+
+    &:last-child {
+      padding-bottom: 30px;
+    }
 
     h3 {
       padding: 0;
@@ -59,10 +67,23 @@
         display: block;
       }
     }
+
+    p {
+      font-size: 14px;
+    }
+
+    ul {
+      margin: 0;
+      padding: 0;
+    }
   }
 
   .projects {
     margin: 45px 0 0 0;
+  }
+
+  section {
+    background: rgba(0, 0, 0, 0.75);
   }
 
   .tags{
