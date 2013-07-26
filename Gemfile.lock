@@ -68,7 +68,6 @@ GEM
       sprockets-sass (~> 1.0.0)
     mime-types (1.23)
     multi_json (1.7.7)
-    newrelic_rpm (3.6.0.83)
     polyglot (0.3.3)
     pony (1.5)
       mail (> 2.0)
@@ -109,7 +108,6 @@ PLATFORMS
 DEPENDENCIES
   middleman (~> 3.1.4)
   middleman-livereload (~> 3.1.0)
-  newrelic_rpm
   pony
   ruby18_source_location
   wdm (~> 0.1.0)

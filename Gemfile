@@ -4,7 +4,6 @@ source 'http://rubygems.org'
 
 gem "middleman", "~>3.1.4"
 gem "pony"
-gem 'newrelic_rpm'
 
 # Live-reloading plugin
 gem "middleman-livereload", "~> 3.1.0"
