@@ -1,12 +1,12 @@
 nav.top-bar {
   width: 100%;
+  z-index: 99;
 
   ul {
     margin: 0;
     padding: 0;
 
     li {
-      display: inline-block;
       text-transform: uppercase;
       -webkit-transition: all 0.5s ease;
       -moz-transition: all 0.5s ease;
@@ -24,9 +24,14 @@ nav.top-bar {
         }
       }
 
-
       a {
         text-decoration: none;
+      }
+    }
+
+    &.right {
+      li {
+        display: inline-block;
       }
     }
   }
