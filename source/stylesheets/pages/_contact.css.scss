@@ -9,6 +9,12 @@
     left: 0;
     right: 0;
     margin: auto;
+
+    @include breakpoint(mobile) {
+      width: auto;
+      margin-left: 10px;
+      margin-right: 10px;
+    }
   }
 
   h1.bar {
@@ -16,6 +22,10 @@
     width: 500px;
     margin: auto;
     padding: 22px;
+    @include breakpoint(mobile) {
+      width: auto;
+      font-size: 2.2em;
+    }
   }
 
   h2.bar {
@@ -25,6 +35,11 @@
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+
+    @include breakpoint(mobile) {
+      width: 100%;
+      font-size: 1.0em;
+    }
 
     &:hover {
       color: $color-peach;
@@ -68,6 +83,11 @@
 
     i {
       font-size: 36px;
+
+      @include breakpoint(mobile) {
+        width: 100%;
+        font-size: 1.3em;
+      }
     }
   }
 

@@ -15,10 +15,12 @@ h1, h2, h3, h4 {
 
 h1 {
   font-size: 52px;
+  text-align: left;
 }
 
 h1.subheader {
   margin: 0;
+  text-align: left;
 }
 
 strong {
@@ -27,6 +29,11 @@ strong {
 
 .title {
   margin-top: 15px;
+  @include breakpoint(mobile) {
+    width: auto;
+    margin-left: 10px;
+    margin-right: 10px;
+  }
 
   h1 {
     background-color: rgba(0, 0, 0, 0.75);
@@ -34,6 +41,12 @@ strong {
     display: inline-block;
     margin: 10px;
     padding: 22px;
+
+      @include breakpoint(mobile) {
+        width: 100%;
+        margin-left: 0;
+        margin-right: 0;
+      }
   }
 
   h2 {
@@ -86,7 +99,7 @@ body#portfolio  {
 }
 
 body#contact  {
-  background-color: $color-plum; /* fallback color if gradients are not supported */
+  background-color: $color-violet; /* fallback color if gradients are not supported */
   background-image: -webkit-linear-gradient(top, $color-plum, $color-violet); /* For Chrome and Safari */
   background-image:    -moz-linear-gradient(top, $color-plum, $color-violet); /* For old Fx (3.6 to 15) */
   background-image:     -ms-linear-gradient(top, $color-plum, $color-violet); /* For pre-releases of IE 10*/
@@ -168,3 +181,7 @@ a {
   -o-animation-name: fadeOut;
   animation-name: fadeOut;
 }
+
+
+// Header
+

@@ -1,4 +1,7 @@
 #root {
+  height: auto;
+  padding-bottom: 50px;
+
   .content {
     margin-top: auto;
     margin-bottom: auto;
@@ -8,6 +11,11 @@
     margin-top: 8%;
     text-align: right;
     margin-right: 50px;
+
+    @include breakpoint(mobile) {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
   }
 
   .bio {
@@ -28,6 +36,11 @@
       &:first-child {
         margin-top: 0;
       }
+    }
+
+    @include breakpoint(mobile) {
+      margin-left: 10px;
+      margin-right: 10px;
     }
   }
 

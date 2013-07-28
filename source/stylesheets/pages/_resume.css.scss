@@ -19,6 +19,12 @@
     margin-bottom: 35px;
     text-align: left;
 
+    @include breakpoint(mobile) {
+      width: 98%;
+      margin-left: 1%;
+      margin-right: 1%;
+    }
+
     .clear {
       background-color: rgba(0, 0, 0, 0);
       padding: 0;
@@ -33,6 +39,10 @@
       width: 450px;
       padding: 0;
       color: #f8f8ff;
+
+      @include breakpoint(mobile) {
+        width: auto;
+      }
     }
   }
 
@@ -58,6 +68,10 @@
 
     &:last-child {
       padding-bottom: 30px;
+    }
+
+    @include breakpoint(mobile) {
+      width: auto;
     }
 
     h3 {

@@ -46,9 +46,6 @@
           transition-duration: 0s;
 }
 
-
-
-
 ///* disable CSS transitions for containers with infinite scrolling*/
 .isotope.infinite-scrolling {
   -webkit-transition: none;
@@ -57,7 +54,6 @@
        -o-transition: none;
           transition: none;
 }
-
 
 // required for containers to inherit vertical size from window
 html,
