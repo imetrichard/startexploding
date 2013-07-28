@@ -12,11 +12,20 @@
     <%= stylesheet_link_tag "normalize", "all", "application" %>
 
     <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
-    <script src="//zeptojs.com/zepto.js"></script>
+    <!--<script src="//zeptojs.com/zepto.js"></script>-->
+
+    <%= javascript_include_tag  "all" %>
+
+    <script src="/javascripts/vendor/custom.modernizr.js"></script>
+
+    <script src="/javascripts/vendor/foundation.min.js"></script>
+
     <script src="/javascripts/vendor/foundation.js"></script>
     <script src="/javascripts/vendor/foundation.topbar.js"></script>
 
-    <%= javascript_include_tag  "all" %>
+
+
+
 
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -61,4 +70,7 @@
   </nav>
 
     <%= yield %>
+  <script>
+    $(document).foundation();
+  </script>
 </html>
