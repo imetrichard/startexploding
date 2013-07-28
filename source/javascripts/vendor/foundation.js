@@ -12,27 +12,27 @@
 // using an anonymous function to redefine the $ shorthand name.
 // See http://docs.jquery.com/Using_jQuery_with_Other_Libraries
 // and http://zeptojs.com/
-var libFuncName = null;
+  var libFuncName = null;
 
-if (typeof jQuery === "undefined" &&
-    typeof Zepto === "undefined" &&
-    typeof $ === "function") {
-  libFuncName = $;
-} else if (typeof jQuery === "function") {
-  libFuncName = jQuery;
-} else if (typeof Zepto === "function") {
-  libFuncName = Zepto;
-} else {
-  throw new TypeError();
-}
+  if (typeof jQuery === "undefined" &&
+      typeof Zepto === "undefined" &&
+      typeof $ === "function") {
+    libFuncName = $;
+  } else if (typeof jQuery === "function") {
+    libFuncName = jQuery;
+  } else if (typeof Zepto === "function") {
+    libFuncName = Zepto;
+  } else {
+    throw new TypeError();
+  }
 
 (function ($, window, document, undefined) {
   'use strict';
 
   /*
-    matchMedia() polyfill - Test a CSS media 
-    type/query in JS. Authors & copyright (c) 2012: 
-    Scott Jehl, Paul Irish, Nicholas Zakas. 
+    matchMedia() polyfill - Test a CSS media
+    type/query in JS. Authors & copyright (c) 2012:
+    Scott Jehl, Paul Irish, Nicholas Zakas.
     Dual MIT/BSD license
 
     https://github.com/paulirish/matchMedia.js
@@ -75,7 +75,7 @@ if (typeof jQuery === "undefined" &&
   if (!Array.prototype.filter) {
     Array.prototype.filter = function(fun /*, thisp */) {
       "use strict";
-   
+
       if (this == null) {
         throw new TypeError();
       }
@@ -107,9 +107,9 @@ if (typeof jQuery === "undefined" &&
         // closest thing possible to the ECMAScript 5 internal IsCallable function
         throw new TypeError("Function.prototype.bind - what is trying to be bound is not callable");
       }
-   
-      var aArgs = Array.prototype.slice.call(arguments, 1), 
-          fToBind = this, 
+
+      var aArgs = Array.prototype.slice.call(arguments, 1),
+          fToBind = this,
           fNOP = function () {},
           fBound = function () {
             return fToBind.apply(this instanceof fNOP && oThis
@@ -117,10 +117,10 @@ if (typeof jQuery === "undefined" &&
                : oThis,
              aArgs.concat(Array.prototype.slice.call(arguments)));
           };
-   
+
       fNOP.prototype = this.prototype;
       fBound.prototype = new fNOP();
-   
+
       return fBound;
     };
   }

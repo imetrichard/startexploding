@@ -10,9 +10,13 @@
     <title><%= current_page.data.title || "Richard Enlow" %></title>
 
     <%= stylesheet_link_tag "normalize", "all", "application" %>
-    <%= javascript_include_tag  "all" %>
-    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+
+    <!--<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>-->
     <script src="//zeptojs.com/zepto.js"></script>
+    <script src="/javascripts/vendor/foundation.js"></script>
+    <script src="/javascripts/vendor/foundation.topbar.js"></script>
+
+    <%= javascript_include_tag  "all" %>
 
     <link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
@@ -23,7 +27,7 @@
     <ul class="title-area">
       <!-- Title Area -->
       <li class="name">
-        <h1><a href="/"><strong>Richard Enlow</strong></a></h1>
+        <h1><a href="/">Richard Enlow</a></h1>
       </li>
 
       <li class="toggle-topbar menu-icon"><a href="#"><span>Menu</span></a></li>
