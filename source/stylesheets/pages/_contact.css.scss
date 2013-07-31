@@ -24,7 +24,7 @@
     padding: 22px;
     @include breakpoint(mobile) {
       width: auto;
-      font-size: 2.2em;
+      font-size: 1.8em;
     }
   }
 
@@ -37,8 +37,8 @@
     transition: all 0.5s ease-in-out;
 
     @include breakpoint(mobile) {
-      width: 100%;
-      font-size: 1.0em;
+      width: 98%;
+      font-size: .9em;
     }
 
     &:hover {
@@ -66,6 +66,10 @@
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+
+    @include breakpoint(mobile) {
+      padding: 16px;
+    }
 
     &:hover {
       i {

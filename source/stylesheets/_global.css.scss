@@ -16,11 +16,10 @@ h1, h2, h3, h4 {
 h1 {
   font-size: 52px;
   text-align: left;
-}
 
-h1.subheader {
-  margin: 0;
-  text-align: left;
+  @include breakpoint(mobile) {
+    font-size: 42px;
+  }
 }
 
 strong {
@@ -29,10 +28,11 @@ strong {
 
 .title {
   margin-top: 15px;
+
   @include breakpoint(mobile) {
-    width: auto;
-    margin-left: 10px;
-    margin-right: 10px;
+    width: 98%;
+    margin-left: 1%;
+    margin-right: 1%;
   }
 
   h1 {
@@ -75,17 +75,45 @@ body {
 
 body#root  {
   background-color: $color-yellow; /* fallback color if gradients are not supported */
-  background: url("/images/bg.jpg") no-repeat center center fixed;
+  background: url("/images/bg.jpg") 40% center fixed;
+  background-repeat: repeat-x;
+
+  @include breakpoint(tablet) {
+    background: url("/images/bg.jpg") left center fixed;
+    background-size: 200%;
+    background-repeat: repeat-x;
+  }
+
+  @include breakpoint(mobile) {
+    background: url("/images/bg.jpg") left top fixed;
+    background-color: $color-brown; /* fallback color if gradients are not supported */
+    background-size: 200%;
+    background-repeat: repeat-x;
+  }
 }
 
 body#resume  {
-  background-color: $color-buff; /* fallback color if gradients are not supported */
   background-image: -webkit-linear-gradient(top, $color-buff, $color-peach); /* For Chrome and Safari */
   background-image:    -moz-linear-gradient(top, $color-buff, $color-peach); /* For old Fx (3.6 to 15) */
   background-image:     -ms-linear-gradient(top, $color-buff, $color-peach); /* For pre-releases of IE 10*/
   background-image:      -o-linear-gradient(top, $color-buff, $color-peach); /* For old Opera (11.1 to 12.0) */
   background-image:         linear-gradient(to bottom, $color-buff, $color-peach); /* Standard syntax; must be last */
-  background: url("/images/resume-bg.jpg") no-repeat center center fixed;
+  background: url("/images/resume-bg.jpg") no-repeat center top fixed;
+  background-color: darken($color-peach, 2.5%); /* fallback color if gradients are not supported */
+
+  @include breakpoint(tablet) {
+    background: url("/images/resume-bg.jpg") left top fixed;
+    background-color: darken($color-peach, 2.5%); /* fallback color if gradients are not supported */
+    background-size: 200%;
+    background-repeat: repeat-x;
+  }
+
+  @include breakpoint(mobile) {
+    background: url("/images/resume-bg.jpg") left top fixed;
+    background-color: darken($color-peach, 2.5%); /* fallback color if gradients are not supported */
+    background-size: 200%;
+    background-repeat: repeat-x;
+  }
 }
 
 body#portfolio  {
