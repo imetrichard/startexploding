@@ -1,4 +1,4 @@
-#resume {
+#project {
   height: auto;
   padding-bottom: 50px;
 
@@ -12,8 +12,15 @@
     }
   }
 
-  .skills, .work, .education {
-    margin-left: 35px;
+  .skill-used {
+    width: 100%;
+  }
+
+  a {
+    display: block;
+  }
+
+  .skills, .work {
     display: inline-block;
     vertical-align: top;
     margin-bottom: 35px;
@@ -49,12 +56,23 @@
 
   .work {
     margin-left: 0;
+    width: 65%;
+
+    section {
+      margin-top: 20px;
+    }
   }
 
-  h2.bar {
-    padding: 10px 15px;
-    margin-bottom: 25px;
-    text-align: left;
+  .skills {
+    margin-left: 35px;
+    width: 15%;
+    margin-top: 10px;
+
+    h2.bar {
+      padding: 10px 15px;
+      margin-bottom: 25px;
+      text-align: left;
+    }
   }
 
   span.subheader {
@@ -65,7 +83,6 @@
 
   article {
     padding: 20px;
-    width: 350px;
     color: $color-white;
     display: block;
     line-height: 1.5;
@@ -99,19 +116,17 @@
     }
   }
 
-  .projects {
-    margin: 45px 0 0 0;
-  }
-
   section {
     background: rgba(0, 0, 0, 0.75);
   }
 
-  .tags{
+  .tags {
     margin: 0;
     padding: 0;
     list-style: none;
     margin-right: 25px;
+    width: 1000px;
+    display: block;
 
     li, .tag {
       float: left;
@@ -127,6 +142,7 @@
 
     .tag {
       margin-left: 20px;
+      margin-right: 20px;
       padding: 0 10px 0 12px;
       //background: rgba(0, 0, 0, 0.75);
       background: $color-yellow;
@@ -135,10 +151,6 @@
       border-radius: 0 4px 4px 0;
       line-height: 30px;
       line-height: 1.85;
-
-      &:first-of-type {
-        margin-top: 0;
-      }
 
       &:before{
         content: "";
