@@ -18,6 +18,9 @@
 #
 # With alternative layout
 # page "/path/to/file.html", :layout => :otherlayout
+
+page "/projects/*", :layout => :layout_interior
+
 #
 # A path which all have the same layout
 # with_layout :admin do

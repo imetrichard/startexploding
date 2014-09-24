@@ -35,6 +35,20 @@
       margin-left: 0;
     }
 
+    .coursework {
+      font-weight: 300;
+      padding-bottom: 30px;
+
+      li {
+        padding: 5px 0;
+      }
+
+      .bullet {
+        margin-right: 7px;
+        margin-top: -5px;
+      }
+    }
+
     h3 {
       font-size: 18px;
       width: auto;
@@ -61,6 +75,18 @@
     line-height: 1;
     color: #f8f8ff;
     font-size: 14px;
+  }
+
+  .skills {
+    margin-top: 0;
+    margin-bottom: 5px;
+
+    h2 {
+      margin: 25px 0 5px;
+      :nth-child(2) {
+        margin: 70px 0 5px;
+      }
+    }
   }
 
   article {
@@ -90,7 +116,7 @@
 
     p {
       font-size: 14px;
-      font-weight: $light;
+      font-weight: 200;
     }
 
     ul {
@@ -120,9 +146,6 @@
       position: relative;
       font-size: 18px;
       margin-top: 15px;
-      &:first-of-type {
-        margin-top: 0;
-      }
     }
 
     .tag {
