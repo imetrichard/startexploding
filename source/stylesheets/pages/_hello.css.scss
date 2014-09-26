@@ -1,8 +1,8 @@
 #root {
   .title {
-    margin-top: 8%;
+    margin-top: 5%;
     text-align: right;
-    margin-right: 50px;
+    margin-right: 15px;
 
     @include breakpoint(mobile) {
       width: 100%;
@@ -45,7 +45,7 @@
   .bio {
     width: 779px;
     margin-left: auto;
-    margin-right: 60px;
+    margin-right: 25px;
     padding: 25px;
     color: $color-white;
     background-color: $color-black;
