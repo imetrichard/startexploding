@@ -3,9 +3,8 @@
   padding-bottom: 50px;
 
   img {
-    margin-left: auto;
-    margin-right: auto;
-    width: 1000px;
+    width: 100%;
+    margin: 10px auto;
   }
 
   a {
@@ -40,10 +39,27 @@
       padding: 0;
     }
 
+    h1, h2, h3 {
+      padding: 0;
+      text-transform: capitalize;
+    }
+
+    h1 {
+      color: #f8f8ff;
+      text-transform: uppercase;
+      font-size: 42px;
+    }
+
+    h2 {
+      font-weight: 300;
+      font-size: 21px;
+      margin-bottom: 30px;
+    }
+
     h3 {
       font-size: 18px;
       width: auto;
-      padding: 0;
+      margin-top: 15px;
       color: #f8f8ff;
 
       @include breakpoint(mobile) {
@@ -58,7 +74,7 @@
     }
 
     article {
-      padding: 20px;
+      padding: 25px 35px;
       color: $color-white;
       display: block;
       line-height: 1.5;
@@ -71,14 +87,6 @@
 
       @include breakpoint(mobile) {
         width: auto;
-      }
-
-      h3 {
-        padding: 0;
-
-        a {
-          display: block;
-        }
       }
 
       p {
