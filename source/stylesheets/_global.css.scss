@@ -90,7 +90,7 @@ body#root  {
 
   @include breakpoint(mobile) {
     background: url("/images/bg.jpg") left top fixed;
-    background-color: $color-brown; /* fallback color if gradients are not supported */
+    background-color: $color-black; /* fallback color if gradients are not supported */
     background-size: 200%;
     background-repeat: repeat-x;
   }

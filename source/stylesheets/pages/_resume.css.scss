@@ -91,7 +91,6 @@
 
   article {
     padding: 20px;
-    width: 350px;
     color: $color-white;
     display: block;
     line-height: 1.5;
@@ -133,7 +132,13 @@
     background: rgba(0, 0, 0, 0.75);
   }
 
-  .tags{
+  .tagbar {
+    @include breakpoint(mobile) {
+      display: none;
+    }
+  }
+
+.tags{
     margin: 0;
     padding: 0;
     list-style: none;
@@ -144,10 +149,9 @@
       height: 35px;
       line-height: 24px;
       position: relative;
-      font-size: 18px;
+      font-size: 16px;
       margin-top: 15px;
     }
-
     .tag {
       margin-left: 20px;
       padding: 0 10px 0 12px;
@@ -157,7 +161,7 @@
       text-decoration: none;
       border-radius: 0 4px 4px 0;
       line-height: 30px;
-      line-height: 1.85;
+      line-height: 2.1;
 
       &:first-of-type {
         margin-top: 0;
