@@ -7,6 +7,29 @@
 
 .line-one, .line-two {
   display: inline-block;
+
+  h1 {
+    @include breakpoint(mobile) {
+      font-size: 1.5em;
+      text-align: center;
+    }
+  }
+
+  @include breakpoint(mobile) {
+    width: 100%;
+  }
+}
+
+.line-three {
+  h1 {
+    @include breakpoint(mobile) {
+      font-size: 1.2em;
+      text-align: center;
+    }
+  }
+  @include breakpoint(mobile) {
+    width: 100%;
+  }
 }
 
 .bio {
@@ -27,6 +50,13 @@
     &:first-child {
       margin-top: 0;
     }
+  }
+
+  @include breakpoint(mobile) {
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
+    font-size: 0.85em;
   }
 }
 

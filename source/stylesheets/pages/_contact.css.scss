@@ -22,6 +22,7 @@
     width: 500px;
     margin: auto;
     padding: 22px;
+    text-align: center;
     @include breakpoint(mobile) {
       width: auto;
       font-size: 1.8em;
@@ -30,6 +31,7 @@
 
   h2.bar {
     padding: 22px;
+    width: 500px;
     margin-top: 15px;
     line-height: 2;
     -webkit-transition: all 0.5s ease-in-out;

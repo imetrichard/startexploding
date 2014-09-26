@@ -2,36 +2,23 @@
   height: auto;
   padding-bottom: 50px;
 
-  .title {
-    text-align: center;
-    margin-top: 50px;
-
-    h1 {
-      padding: 5px 25px;
-      margin: 0;
-    }
-  }
-
   img {
     margin-left: auto;
     margin-right: auto;
     width: 1000px;
   }
 
-  .skill-used {
-    width: 100%;
-  }
-
   a {
     display: block;
   }
 
-  .skills, .work {
+  .work {
     display: inline-block;
     vertical-align: top;
     margin-bottom: 35px;
     text-align: left;
-    width: 25%;
+    margin-left: 0;
+    width: 65%;
 
     @include breakpoint(mobile) {
       width: 98%;
@@ -39,13 +26,18 @@
       margin-right: 1%;
     }
 
+    section {
+      margin-top: 20px;
+      background: rgba(0, 0, 0, 0.75);
+    }
+
+    @include breakpoint(mobile) {
+      width: 95%;
+    }
+
     .clear {
       background-color: rgba(0, 0, 0, 0);
       padding: 0;
-    }
-
-    .title {
-      margin-left: 0;
     }
 
     h3 {
@@ -58,135 +50,40 @@
         width: auto;
       }
     }
-  }
 
-  .work {
-    margin-left: 0;
-    width: 65%;
-
-    section {
-      margin-top: 20px;
-    }
-  }
-
-  .skills {
-    margin-left: 35px;
-    width: 15%;
-    margin-top: 10px;
-
-    h2.bar {
-      padding: 10px 15px;
-      margin-bottom: 25px;
-      text-align: left;
-    }
-  }
-
-  span.subheader {
-    line-height: 1;
-    color: #f8f8ff;
-    font-size: 14px;
-  }
-
-  article {
-    padding: 20px;
-    color: $color-white;
-    display: block;
-    line-height: 1.5;
-    letter-spacing: 1px;
-    padding-bottom: 0;
-
-    &:last-child {
-      padding-bottom: 30px;
-    }
-
-    @include breakpoint(mobile) {
-      width: auto;
-    }
-
-    h3 {
-      padding: 0;
-
-      a {
-        display: block;
-      }
-    }
-
-    p {
+    span.subheader {
+      line-height: 1;
+      color: #f8f8ff;
       font-size: 14px;
-      font-weight: $light;
     }
 
-    ul {
-      margin: 0;
-      padding: 0;
-    }
-  }
+    article {
+      padding: 20px;
+      color: $color-white;
+      display: block;
+      line-height: 1.5;
+      letter-spacing: 1px;
+      padding-bottom: 0;
 
-  section {
-    background: rgba(0, 0, 0, 0.75);
-  }
-
-  .tags {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    margin-right: 25px;
-    width: 1000px;
-    display: block;
-
-    li, .tag {
-      float: left;
-      height: 35px;
-      line-height: 24px;
-      position: relative;
-      font-size: 18px;
-      margin-top: 15px;
-      &:first-of-type {
-        margin-top: 0;
-      }
-    }
-
-    .tag {
-      margin-left: 20px;
-      margin-right: 20px;
-      padding: 0 10px 0 12px;
-      //background: rgba(0, 0, 0, 0.75);
-      background: $color-yellow;
-      color: #4d4d4d;
-      text-decoration: none;
-      border-radius: 0 4px 4px 0;
-      line-height: 30px;
-      line-height: 1.85;
-
-      &:before{
-        content: "";
-        float: left;
-        position: absolute;
-        top: 0;
-        left: -12px;
-        width: 0;
-        height: 0;
-        //border-color: transparent rgba(0, 0, 0, 0.75) transparent transparent;
-        border-color: transparent $color-yellow transparent transparent;
-        border-style: solid;
-        border-width: 17px 12px 18px 0;
+      &:last-child {
+        padding-bottom: 30px;
       }
 
-      &:after{
-        content: "";
-        position: absolute;
-        top: 15px;
-        left: 0;
-        float: left;
-        width: 4px;
-        height: 4px;
-        -moz-border-radius: 2px;
-        -webkit-border-radius: 2px;
-        border-radius: 2px;
-        background: #4d4d4d;
-        -moz-box-shadow: -1px -1px 2px $color-yellow;
-        -webkit-box-shadow: -1px -1px 2px $color-yellow;
-        box-shadow: -1px -1px 2px $color-yellow;
+      @include breakpoint(mobile) {
+        width: auto;
+      }
+
+      h3 {
+        padding: 0;
+
+        a {
+          display: block;
+        }
+      }
+
+      p {
+        font-size: 14px;
+        font-weight: $light;
       }
     }
   }
