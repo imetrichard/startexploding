@@ -1,528 +1,114 @@
 <body id="portfolio">
-  <div class="title">
-    <h1 class="bar"><strong>Projects</strong></h1>
-  </div>
+  <!--<div class="title">-->
+    <!--<h1 class="bar"><strong>Projects</strong></h1>-->
+  <!--</div>-->
 
-  <script>
-    $(document).foundation();
-  </script>
+  <div id="case-studies">
 
-  <section id="options" class="clearfix">
-
-    <ul id="filters" class="option-set clearfix" data-option-key="filter">
-      <li><a href="#filter" data-option-value="*" class="selected">Show All</a></li>
-      <li><a href="#filter" data-option-value=".client">Clients</a></li>
-      <li><a href="#filter" data-option-value=".web">Web Design</a></li>
-      <li><a href="#filter" data-option-value=".ux">UX/UI</a></li>
-      <li><a href="#filter" data-option-value=".dev">Web Development</a></li>
-      <li><a href="#filter" data-option-value=".print">Print Design</a></li>
-      <li><a href="#filter" data-option-value=".branding">Branding</a></li>
-    </ul>
-
-  </section>
-
-  <div id="container" class="clearfix">
-
-  <a href="http://www.amoe.ba" target="_blank">
-    <div class="type web visual dev amoeba">
-      <div class="info animated fadeIn">
-        <h1>Amoeba Website</h1>
-        <ul>
-          <li>Web Design</li>
-          <li>Visual Design</li>
-          <li>Front End Web Development</li>
-        </ul>
-        <p>A Single page HTML/CSS3 web app with transitions. All the images are actually scalable vector graphics allow for
-          crystal clear viewing at any resolution and dramatically reduced load times.
-        </p>
-      </div>
-    </div>
-    </a>
-
-    <div class="type square client">
+    <div class="case type square">
       <div class="thumb">
-        <%= image_tag '/images/clients/taproot.svg' %>
+        <%= image_tag '/images/clients/fuze.svg', class: "fuze" %>
+      </div>
+      <div class="description">
+        <p> It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its
+          four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling
+          salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and
+          housed in a nice, gilded frame. </p>
+          <span class="text-link"><a href="#">See Details</a> </span>
       </div>
     </div>
 
-    <a href="http://www.behance.net/gallery/Hack-The-Future/6766211" target="_blank">
-    <div class="type branding htf">
-      <div class="info animated fadeIn">
-        <h1>Hack The Future</h1>
-        <ul>
-          <li>Branding</li>
-          <li>Social Media</li>
-          <li>Promotional</li>
-        </ul>
-        <p>Hack the Future is a party and hackathon for kids in grades 5-12. It’s a self-directed hackathon for
-          future hackers. And, it’s a unique opportunity to learn modern software and hardware design and engineering
-          from mentors in bay area startups and companies large and small. I handled the creation of branding and also
-          act as a design mentor for the children. I'm currently working on revamping their web presence.</p>
-      </div>
-    </div>
-    </a>
-
-    <div class="type square client">
-      <div class="thumb">
-        <%= image_tag '/images/clients/icc.svg' %>
-      </div>
-    </div>
-
-    <div class="type print branding keiser">
-      <div class="info animated fadeIn">
-        <h1>Keiser Product Catalogs</h1>
-        <ul>
-          <li>Visual Design</li>
-          <li>Layout</li>
-          <li>Print</li>
-        </ul>
-        <p>Creation of award winning product catalogs and other collateral  for premium health equipment producer.</p>
-      </div>
-    </div>
-
-  <a href="" target="_blank">
-    <div class="type branding do">
-      <div class="info animated fadeIn">
-        <h1>Do Daily</h1>
-        <ul>
-          <li>Mobile</li>
-          <li>Visual</li>
-          <li>UX/UI</li>
-        </ul>
-        <p>Do Daily is the ultimate is simple interfaces -- it essentially one button. The concept is simple. Let the app
-          know what you want to accomplish and with the goal in mind it will incorporate timely notifications and it's
-          intuitive interface to assist users in forming daily habits.</p>
-      </div>
-    </div>
-  </a>
-
-  <div class="type square client">
-      <div class="thumb">
-        <%= image_tag '/images/clients/oup.svg' %>
-      </div>
-    </div>
-
-    <div class="type web ux ds">
-      <div class="info animated fadeIn">
-        <h1>DoubleSnap iOS App</h1>
-        <ul>
-          <li>Mobile</li>
-          <li>Responsive</li>
-          <li>UX/UI</li>
-          <li>Visual Design</li>
-        </ul>
-        <p>Design of upcoming social media photo app.</p>
-      </div>
-    </div>
-
-    <div class="type ux web search">
-      <div class="info animated fadeIn">
-        <h1>Sales Territory Search</h1>
-        <ul>
-          <li>UX/UI</li>
-          <li>Web Design</li>
-        </ul>
-        <p>A UI concept (later implemented) of a powerful search feature which allowed users to search in a variety of
-          ways including the ability to set a search territory that persisted on the user. The territory search allowed
-          salespersons to quickly set their sales territory once and use it to search their set territory on each visit.
-        </p>
-      </div>
-    </div>
-
-    <div class="type square client">
-      <div class="thumb">
-        <%= image_tag '/images/clients/sfntlogo.svg' %>
-      </div>
-    </div>
-
-  <div class="type web ux dev upload">
-      <div class="info animated fadeIn">
-        <h1>Upload / Attach Image User Flows</h1>
-        <ul>
-          <li>Web Design</li>
-          <li>UX/UI</li>
-          <li>User Flow</li>
-        </ul>
-        <p>Creation of a flow to design a complicated process of both uploading a photo and attaching already uploaded
-          photos to a page. The flow was designed to make sure the complicated process was as frictionless and
-          intuitive as possible for the user.</p>
-      </div>
-    </div>
-
-    <a href="http://www.behance.net/gallery/Social-Network-Avatar-Creator-In-Progress/6765727" target="_blank">
-    <div class="type ux web avatar">
-      <div class="info animated fadeIn">
-        <h1>Avatar Creation</h1>
-        <ul>
-          <li class="ui">UX/UI</li>
-          <li class="web">Web Design</li>
-          <li class="visual">Visual Design</li>
-        </ul>
-        <p>Teamed with stakeholders to compile needs for their custom avatar system. Identified their needs and their
-          users needs to produce a slick easy to use interface to fit in seamlessly into their site.</p>
-      </div>
-    </div>
-    </a>
-
-
-  <div class="type web ux dev port">
-    <div class="info animated fadeIn">
-      <h1>This Website</h1>
-      <ul>
-        <li>Web Design</li>
-        <li>Front-End Web Development</li>
-        <li>Visual Design</li>
-      </ul>
-      <p>Yep, I made this site! </p>
-    </div>
-  </div>
-
-
-  <a href="" target="_blank">
-    <div class="type branding bb">
-      <div class="info animated fadeIn">
-        <h1>Book Bit</h1>
-        <ul>
-          <li>Mobile</li>
-          <li>UX/UI</li>
-          <li>Wireframe</li>
-        </ul>
-        <p>Wireframe and information architecture for upcoming mobile application.</p>
-      </div>
-    </div>
-  </a>
-
-
-  <div class="type print oxford">
-      <div class="info animated fadeIn">
-        <h1>Oxford University Press Book Cover</h1>
-        <ul>
-          <li>Visual Design</li>
-          <li>Layout</li>
-          <li>Print</li>
-        </ul>
-        <p>Contracted by Oxford University Press to design book cover for Standford lecturer, Carol Vernallis about
-          film making and music video in the age of streaming video.</p>
-      </div>
-    </div>
-
-    <div class="type square client">
-      <div class="thumb">
-        <%= image_tag '/images/clients/keiser.svg' %>
-      </div>
-    </div>
-
-    <div class="type web ux icc">
-      <div class="info animated fadeIn">
-        <h1>Incloud Counsel</h1>
-        <ul>
-          <li>Web Design</li>
-          <li>UX / UI</li>
-          <li>Visual Design</li>
-        </ul>
-        <p>Rapid protoyping and design of Salesforce integrated application that allows users to quickly lookup,
-          compare, and file patent information. </p>
-      </div>
-    </div>
-
-  <div class="type web ux dev sfnt">
-    <div class="info animated fadeIn">
-      <h1>SF New Tech Digital Investments</h1>
-      <ul>
-        <li>Web Design</li>
-        <li>Front-End Web Development</li>
-        <li>UX/UI</li>
-        <li>Visual Design</li>
-      </ul>
-      <p>Design and development assistance for upcoming virtual investment app.</p>
-    </div>
-  </div>
-
-    <div class="type square client">
-      <div class="thumb">
-        <%= image_tag '/images/clients/amoeba.svg' %>
-      </div>
-    </div>
-
-    <div class="type web ux dev exumit">
-      <div class="info animated fadeIn">
-        <h1>Exumit Web Application</h1>
-        <ul>
-          <li>Web Design</li>
-          <li>Front-End Web Development</li>
-          <li>UX/UI</li>
-          <li>Visual Design</li>
-        </ul>
-        <p>Designed and helped create a rails application for a startup who wished to create a disruption social network.
-          The network which allows salepersons to anonymously leave reviews on companies they sold to thus allowing others
-          to improve their sales forecast</p>
-      </div>
-    </div>
-
-    <div class="type square client">
-      <div class="thumb">
-        <%= image_tag '/images/clients/mozilla.svg' %>
-      </div>
-    </div>
-
-    <div class="type branding print pssf">
-      <div class="info animated fadeIn">
-        <h1>Psychedelic Society of San Francisco</h1>
-        <ul>
-          <li>Branding</li>
-          <li>Visual Design</li>
-          <li>Social Media</li>
-          <li>Print Design</li>
-        </ul>
-        <p>Assisted in creating the PSSF brand and incorporating it throughout the organization including event
-          support with posters and social media design.
-        </p>
-      </div>
-    </div>
-
-    <div class="type square client">
-      <div class="thumb">
-        <%= image_tag '/images/clients/exumit.svg' %>
-      </div>
-    </div>
-
-    <!--<a href="http://www.behance.net/gallery/Thomas-C-Slater-Compassion-Center/8481429" target="_blank">-->
-    <!--<div class="type web ux slater">-->
-      <!--<div class="info animated fadeIn">-->
-        <!--<h1>TCS Center Website</h1>-->
-        <!--<ul>-->
-          <!--<li>Web Design</li>-->
-          <!--<li>Responsive</li>-->
-          <!--<li>UX/UI</li>-->
-          <!--<li>Visual Design</li>-->
-        <!--</ul>-->
-        <!--<p>Guided stakeholders through the initial discovery phase of web presence including stakeholders interviews,-->
-          <!--user personas, site flows, and rapid prototyping. Used information to design consumer facing site for-->
-          <!--Rhode Island’s first cannabis dispensary.</p>-->
-      <!--</div>-->
-    <!--</div>-->
-    <!--</a>-->
-
-    <div class="type square client">
-      <div class="thumb">
-        <%= image_tag '/images/clients/vulume.svg' %>
-      </div>
-    </div>
-
-    <a href="http://www.vulume.com" target="_blank">
-    <div class="type web ux dev vulume">
-      <div class="info animated fadeIn">
-        <h1>VULUME Web Application</h1>
-        <ul>
-          <li>Web Design</li>
-          <li>Front-End Web Development</li>
-          <li>UX/UI</li>
-          <li>Visual Design</li>
-        </ul>
-        <p>Web design and development of project collaboration tool for architects, contractors, and interior decorators.</p>
-      </div>
-    </div>
-    </a>
-
-    <div class="type square client">
-      <div class="thumb">
-        <%= image_tag '/images/clients/htf.svg' %>
-      </div>
-    </div>
-
-  <a href="https://github.com/startexploding" target="_blank">
-  <div class="type dev github">
-    <div class="info animated fadeIn">
-      <h1>Find me on GITHUB</h1>
-
-      <p>I occasionally push to open-source projects and client repositories (and excited to do more).</p>
-    </div>
-  </div>
-  </a>
-
-  <div class="type web ux dev moz">
-    <div class="info animated fadeIn">
-      <h1>Mozilla Foundation Webmaker Events</h1>
-      <ul>
-        <li>Web Design</li>
-        <li>Front-End Web Development</li>
-        <li>UX/UI</li>
-        <li>Visual Design</li>
-      </ul>
-      <p>Design surrounding a consumer facing metrics panel for Mozilla's Webmaker Events. The panel contains a live updated
-        running story of Webmaker and c become useful, inspiring info for all user groups; Mozilla internal, sponsors
-        and event maker/attendees.</p>
-    </div>
-  </div>
-
-<!--Considering removing-->
-  <!--<div class="type square client">-->
+    <!--<div class="case type square">-->
       <!--<div class="thumb">-->
-        <!--<%#= image_tag '/images/clients/pssf.png' %>-->
+        <!--<%= image_tag '', class: "bb" %>-->
+        <!--Book Bits-->
+      <!--</div>-->
+      <!--<div class="description">-->
+        <!--<p> It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its-->
+          <!--four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling-->
+          <!--salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and-->
+          <!--housed in a nice, gilded frame. It showed a lady fitted out with a fur hat and fur boa who sat upright,-->
+          <!--raising a heavy fur muff that covered the whole of her lower arm towards the viewer. Gregor then turned to-->
+          <!--look out the window at the dull weather. </p>-->
       <!--</div>-->
     <!--</div>-->
 
-  <div class="type branding print sfccc">
-    <div class="info animated fadeIn">
-      <h1>Rebranding of SFCCC</h1>
-      <ul>
-        <li>Branding</li>
-        <li>Visual Design</li>
-        <li>Print Design</li>
-      </ul>
-      <p>Together with a team including account managers, strategists, and brand managers worked to rebrand the San
-        Francisco Community Clinics Consortium. This project was commissioned by the Taproot Foundation who teams
-        professionals up with non-profits to provide pro-bono assistance
-      </p>
+    <div class="case">
+      <div class="thumb type square">
+        <%= image_tag '/images/clients/icc.svg', class: "icc" %>
+      </div>
+      <div class="description">
+        <p> It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its
+          four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling
+          salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and
+          housed in a nice, gilded frame. </p>
+        <span class="text-link"><a href="#">See Details</a> </span>
+      </div>
+    </div>
+
+    <div class="case type square">
+      <div class="thumb">
+        <%= image_tag '/images/clients/keiser.svg', class: "keiser" %>
+      </div>
+      <div class="description">
+        <p> It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its
+          four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling
+          salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and
+          housed in a nice, gilded frame. </p>
+        <span class="text-link"><a href="#">See Details</a> </span>
+      </div>
+    </div>
+
+    <div class="case type square">
+      <div class="thumb">
+        <%= image_tag '/images/clients/amoeba.svg', class: "amoeba" %>
+      </div>
+      <div class="description">
+        <p> It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its
+          four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling
+          salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and
+          housed in a nice, gilded frame. </p>
+        <span class="text-link"><a href="#">See Details</a> </span>
+      </div>
+    </div>
+
+    <div class="case type square">
+      <div class="thumb">
+        <%= image_tag '/images/clients/exumit.svg', class: "exumit" %>
+      </div>
+      <div class="description">
+        <p> It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its
+          four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling
+          salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and
+          housed in a nice, gilded frame. </p>
+        <span class="text-link"><a href="#">See Details</a> </span>
+      </div>
+
+    </div>
+
+    <div class="case type square">
+      <div class="thumb vulume">
+        <%= image_tag '/images/clients/vulume.svg', class: "vulume" %>
+      </div>
+      <div class="description">
+      <p> It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its
+        four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling
+        salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and
+        housed in a nice, gilded frame. </p>
+        <span class="text-link"><a href="#">See Details</a> </span>
+      </div>
+    </div>
+
+    <div class="case type square">
+      <div class="thumb">
+        <%= image_tag '/images/clients/htf.svg', class: "htf" %>
+      </div>
+      <div class="description">
+        <p> It wasn't a dream. His room, a proper human room although a little too small, lay peacefully between its
+          four familiar walls. A collection of textile samples lay spread out on the table - Samsa was a travelling
+          salesman - and above it there hung a picture that he had recently cut out of an illustrated magazine and
+          housed in a nice, gilded frame. </p>
+        <span class="text-link"><a href="#">See Details</a> </span>
+      </div>
     </div>
   </div>
-
-
-  </div> <!-- #container -->
-
-  <script src="../javascripts/jquery-1.7.1.min.js"></script>
-  <script src="../javascripts/jquery.isotope.min.js"></script>
-
-  <script>
-    $(function(){
-
-      var $container = $('#container');
-
-      $container.isotope({
-        itemSelector : '.type'
-      });
-
-
-      var $optionSets = $('#options .option-set'),
-        $optionLinks = $optionSets.find('a');
-
-      $optionLinks.click(function(){
-        var $this = $(this);
-        // don't proceed if already selected
-        if ( $this.hasClass('selected') ) {
-          return false;
-        }
-        var $optionSet = $this.parents('.option-set');
-        $optionSet.find('.selected').removeClass('selected');
-        $this.addClass('selected');
-
-        // make option object dynamically, i.e. { filter: '.my-filter-class' }
-        var options = {},
-          key = $optionSet.attr('data-option-key'),
-          value = $this.attr('data-option-value');
-        // parse 'false' as false boolean
-        value = value === 'false' ? false : value;
-        options[ key ] = value;
-        if ( key === 'layoutMode' && typeof changeLayoutMode === 'function' ) {
-          // changes in layout modes need extra logic
-          changeLayoutMode( $this, options )
-        } else {
-          // otherwise, apply new options
-          $container.isotope( options );
-        }
-
-        return false;
-      });
-
-
-    });
-  </script>
-
-  <script>
-    $(function() {
-
-      $.Isotope.prototype._getCenteredMasonryColumns = function() {
-        this.width = this.element.width();
-        var parentWidth = this.element.parent().width();
-        // i.e. options.masonry && options.masonry.columnWidth
-        var colW = this.options.masonry && this.options.masonry.columnWidth ||
-          // or use the size of the first item
-          this.$filteredAtoms.outerWidth(true) ||
-          // if there's no items, use size of container
-          parentWidth;
-        var cols = Math.floor(parentWidth / colW);
-        cols = Math.max(cols, 1);
-        // i.e. this.masonry.cols = ....
-        this.masonry.cols = cols;
-        // i.e. this.masonry.columnWidth = ...
-        this.masonry.columnWidth = colW;
-      };
-
-      $.Isotope.prototype._masonryReset = function() {
-        // layout-specific props
-        this.masonry = {};
-        // FIXME shouldn't have to call this again
-        this._getCenteredMasonryColumns();
-        var i = this.masonry.cols;
-        this.masonry.colYs = [];
-        while (i--) {
-          this.masonry.colYs.push(0);
-        }
-      };
-
-      $.Isotope.prototype._masonryResizeChanged = function() {
-        var prevColCount = this.masonry.cols;
-        // get updated colCount
-        this._getCenteredMasonryColumns();
-        return (this.masonry.cols !== prevColCount);
-      };
-
-      $.Isotope.prototype._masonryGetContainerSize = function() {
-        var unusedCols = 0,
-          i = this.masonry.cols;
-        // count unused columns
-        while (--i) {
-          if (this.masonry.colYs[i] !== 0) {
-            break;
-          }
-          unusedCols++;
-        }
-        return {
-          height: Math.max.apply(Math, this.masonry.colYs),
-          // fit container to columns that have been used;
-          width: (this.masonry.cols - unusedCols) * this.masonry.columnWidth
-        };
-      };
-
-
-      var $container = $('#container'),
-        $body = $('body'),
-        colW = 60,
-        columns = null;
-
-      $container.isotope({
-        // disable window resizing
-        resizable: false,
-        masonry: {
-          columnWidth: colW
-        }
-      });
-
-      //FILTERING
-      $('#filters a').click(function() {
-        var selector = $(this).attr('data-filter');
-        $container.isotope({
-          filter: selector
-        });
-        return false;
-      });
-    });
-  </script>
-</body>
-
-<script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-
-  ga('create', 'UA-42734287-1', 'herokuapp.com');
-  ga('send', 'pageview');
-
-</script>
-
-<script>
-  document.write('<script src=/javascripts/vendor/'
-    + ('__proto__' in {} ? 'zepto' : 'jquery')
-    + '.js><\/script>');
-</script>
