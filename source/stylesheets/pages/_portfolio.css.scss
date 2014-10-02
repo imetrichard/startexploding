@@ -30,7 +30,19 @@
       margin-right: auto;
       display: block;
       margin-bottom: 30px;
-      background-color: rgba(0, 0, 0, 0.75);
+      cursor: pointer;
+      -webkit-transition: all 0.5s ease-in-out;
+      -moz-transition: all 0.5s ease-in-out;
+      -o-transition: all 0.5s ease-in-out;
+      transition: all 0.5s ease-in-out;
+
+        &:hover {
+          background-color: rgba(255, 255, 255, 0.1);
+          -webkit-transition: all 0.5s ease-in-out;
+          -moz-transition: all 0.5s ease-in-out;
+          -o-transition: all 0.5s ease-in-out;
+          transition: all 0.5s ease-in-out;
+        }
 
       .thumb {
         width: 30%;
@@ -128,6 +140,7 @@
         p {
           text-align: left;
           color: $color-white;
+          margin-bottom: 0;
         }
       }
     }

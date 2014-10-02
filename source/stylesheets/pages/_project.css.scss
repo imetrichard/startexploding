@@ -1,4 +1,4 @@
-#project {
+#project{
   height: auto;
   padding-bottom: 50px;
 
@@ -55,16 +55,16 @@
     }
 
     h2 {
-      font-weight: 300;
-      font-size: 16px;
+      font-size: 18px;
+      width: auto;
+      color: #f8f8ff;
       margin-bottom: 30px;
     }
 
     h3 {
-      font-size: 18px;
-      width: auto;
+      font-weight: 300;
+      font-size: 16px;
       margin-top: 15px;
-      color: #f8f8ff;
 
       @include breakpoint(mobile) {
         width: auto;
@@ -98,5 +98,56 @@
         font-weight: $light;
       }
     }
+  }
+
+  .case-study {
+    width: 100%;
+
+    h3 {
+      margin-top: 0;
+    }
+
+    header {
+      background: url("/images/portfolio/fuze_1.jpg") no-repeat center center;
+      background-size: cover;
+      height: 600px;
+      margin: 0;
+      position: relative;
+
+      .info {
+        background-color: rgba(0,0,0,.75);
+        padding: 10px;
+        position: absolute;
+        bottom: 0;
+        width: 100%;
+        padding: 10px 12%;
+      }
+
+      h1 {
+        margin-top: 10px;
+      }
+
+      h2 {
+        font-size: 18px;
+        color: #f8f8ff;
+        margin-bottom: 10px;
+        margin-top: 10px;
+      }
+
+      img {
+        margin: 0;
+      }
+    }
+
+    section {
+      background-color: rgba(0,0,0,0);
+      padding: 10px 10%;
+    }
+
+    article {
+      padding-top: 0;
+      color: #222222;
+    }
+
   }
 }

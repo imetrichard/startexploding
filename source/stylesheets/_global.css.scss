@@ -36,7 +36,7 @@ strong {
   }
 
   h1 {
-    background-color: rgba(0, 0, 0, 0.75);
+    background-color: rgba(0, 0, 0, 1);
     color: $color-white;
     display: inline-block;
     margin: 10px;
@@ -127,13 +127,7 @@ body#portfolio  {
 }
 
 body#project  {
-  background-color: $color-plum; /* fallback color if gradients are not supported */
-  background-image: -webkit-linear-gradient(top, $color-peach, $color-plum); /* For Chrome and Safari */
-  background-image:    -moz-linear-gradient(top, $color-peach, $color-plum); /* For old Fx (3.6 to 15) */
-  background-image:     -ms-linear-gradient(top, $color-peach, $color-plum); /* For pre-releases of IE 10*/
-  background-image:      -o-linear-gradient(top, $color-peach, $color-plum); /* For old Opera (11.1 to 12.0) */
-  background-image:         linear-gradient(to bottom, $color-peach, $color-plum);; /* Standard syntax; must be last */
-  background-repeat: repeat-x;
+  background-color: #fff; /* fallback color if gradients are not supported */
 }
 
 body#contact  {
