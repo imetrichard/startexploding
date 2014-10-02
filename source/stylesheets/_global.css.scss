@@ -96,18 +96,18 @@ body#resume  {
   background-image:     -ms-linear-gradient(top, $color-buff, $color-peach); /* For pre-releases of IE 10*/
   background-image:      -o-linear-gradient(top, $color-buff, $color-peach); /* For old Opera (11.1 to 12.0) */
   background-image:         linear-gradient(to bottom, $color-buff, $color-peach); /* Standard syntax; must be last */
-  background: url("/images/resume-bg.jpg") no-repeat center top fixed;
+  //background: url("/images/resume-bg.jpg") no-repeat center top fixed;
   background-color: darken($color-peach, 2.5%); /* fallback color if gradients are not supported */
 
   @include breakpoint(tablet) {
-    background: url("/images/resume-bg.jpg") left top fixed;
+    //background: url("/images/resume-bg.jpg") left top fixed;
     background-color: darken($color-peach, 2.5%); /* fallback color if gradients are not supported */
     background-size: 200%;
     background-repeat: repeat-x;
   }
 
   @include breakpoint(mobile) {
-    background: url("/images/resume-bg.jpg") left top fixed;
+    //background: url("/images/resume-bg.jpg") left top fixed;
     background-color: darken($color-peach, 2.5%); /* fallback color if gradients are not supported */
     background-size: 200%;
     background-repeat: repeat-x;
@@ -130,11 +130,11 @@ body#project  {
 
 body#contact  {
   background-color: $color-violet; /* fallback color if gradients are not supported */
-  background-image: -webkit-linear-gradient(top, $color-plum, $color-violet); /* For Chrome and Safari */
-  background-image:    -moz-linear-gradient(top, $color-plum, $color-violet); /* For old Fx (3.6 to 15) */
-  background-image:     -ms-linear-gradient(top, $color-plum, $color-violet); /* For pre-releases of IE 10*/
-  background-image:      -o-linear-gradient(top, $color-plum, $color-violet); /* For old Opera (11.1 to 12.0) */
-  background-image:         linear-gradient(to bottom, $color-plum, $color-violet); /* Standard syntax; must be last */
+  background-image: -webkit-linear-gradient(top, $color-peach, $color-plum); /* For Chrome and Safari */
+  background-image:    -moz-linear-gradient(top, $color-peach, $color-plum); /* For old Fx (3.6 to 15) */
+  background-image:     -ms-linear-gradient(top, $color-peach, $color-plum); /* For pre-releases of IE 10*/
+  background-image:      -o-linear-gradient(top, $color-peach, $color-plum); /* For old Opera (11.1 to 12.0) */
+  background-image:         linear-gradient(to bottom, $color-peach, $color-plum); /* Standard syntax; must be last */
   background: url("/images/contact-bg.jpg") no-repeat bottom center fixed;
 }
 
