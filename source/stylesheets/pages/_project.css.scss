@@ -62,7 +62,7 @@
     }
 
     h3 {
-      font-weight: 300;
+      font-weight: 600;
       font-size: 16px;
       margin-top: 15px;
 
@@ -94,7 +94,7 @@
       }
 
       p {
-        font-size: 14px;
+        font-size: 16px;
         font-weight: $light;
       }
     }
@@ -108,11 +108,19 @@
     }
 
     header {
-      background: url("/images/portfolio/fuze_1.jpg") no-repeat center center;
-      background-size: cover;
       height: 600px;
       margin: 0;
       position: relative;
+
+      &.fuze {
+        background: url("/images/portfolio/fuze_1.jpg") no-repeat center center;
+        background-size: cover;
+      }
+
+      &.vulume {
+        background: url("/images/portfolio/vulume_7.png") no-repeat top left;
+        background-size: cover;
+      }
 
       .info {
         background-color: rgba(0,0,0,.75);
@@ -121,6 +129,10 @@
         bottom: 0;
         width: 100%;
         padding: 10px 12%;
+      }
+
+      iframe {
+        text-align: align center;
       }
 
       h1 {
@@ -132,6 +144,8 @@
         color: #f8f8ff;
         margin-bottom: 10px;
         margin-top: 10px;
+        font-weight: 300;
+        line-height: 1.25;
       }
 
       img {
