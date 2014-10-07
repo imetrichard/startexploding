@@ -18,7 +18,7 @@
     vertical-align: top;
     margin-bottom: 35px;
     margin-top: 25px;
-    text-align: left;
+    text-align: center;
     width: 25%;
     padding: 0px 20px;
     background-color: rgba(0, 0, 50, 0.2);
@@ -36,6 +36,10 @@
 
     .title {
       margin-left: 0;
+    }
+
+    section {
+      text-align: left;
     }
 
     .coursework {
