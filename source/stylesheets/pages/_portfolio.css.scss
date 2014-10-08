@@ -98,13 +98,33 @@
         line-height: 1.5;
         float: left;
         text-align: right;
-        margin-top: 20px;
+        height: 200px;
+        line-height: 200px;
+
+        em {
+          font-weight: 600;
+          display: block;
+          margin-top: 10px;
+        }
 
         p {
           text-align: left;
           color: $color-white;
-          margin-bottom: 0;
+          margin: 0;
+          display: inline-block;
+          vertical-align: middle;
+          line-height: 23px;
         }
+      }
+    }
+
+    .disabled {
+      &:hover {
+        background-color: rgba(255, 255, 255, 0.0);
+        -webkit-transition: all 0.5s ease-in-out;
+        -moz-transition: all 0.5s ease-in-out;
+        -o-transition: all 0.5s ease-in-out;
+        transition: all 0.5s ease-in-out;
       }
     }
   }
