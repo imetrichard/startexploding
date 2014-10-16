@@ -114,13 +114,16 @@
       text-align: center;
 
       .fuze {
-        //background: url("/images/portfolio/fuze_1.jpg") no-repeat bottom center;
-        //background-size: cover;
+        background-color: rgba(0, 193, 213, 0.75)
       }
 
       &.vulume {
-        //background: url("/images/portfolio/vulume_1.png") no-repeat bottom center;
-        //background-size: cover;
+        background-color: #85ccc2;
+        height: 175px;
+      }
+
+      &.htf {
+        background-color: rgba(46, 204, 113, 0.75)
       }
 
       .play {
@@ -156,7 +159,6 @@
       }
 
       .info {
-        background-color: rgba(0,0,0,.75);
         width: 100%;
         padding: 10px 12%;
         text-align: center;
@@ -187,6 +189,7 @@
     section {
       background-color: rgba(0,0,0,0);
       padding: 10px 10%;
+      margin-bottom: 150px;
     }
 
     article {
@@ -196,6 +199,87 @@
       margin-left: auto;
       margin-right: auto;
     }
+  }
+  footer {
+    background-color: #eceef3;
+    width: 100%;
+    height: 150px;
+    position: absolute;
+    bottom: 0;
 
+    div {
+      position: absolute;
+      display: block;
+      bottom: 0;
+    }
+
+    .contact {
+      width: 60%;
+      height: 100%;
+      left: 20%;
+      text-align: center;
+
+      h1 {
+        font-size: 18px;
+        text-align: center;
+        color: $color-black;
+        margin-top: 40px;
+      }
+
+      button {
+        margin-top: 20px;
+        border-radius: 6px;
+      }
+    }
+
+    .previous {
+      height: 100%;
+      width: 20%;
+      background-color: #e7e9ee;
+      left: 0;
+      margin-top: 40px;
+      text-align: center;
+      line-height: 7;
+      vertical-align: middle;
+    }
+
+    .next {
+      height: 100%;
+      width: 20%;
+      background-color: #e7e9ee;
+      right: 0;
+      text-align: center;
+      line-height: 7;
+      vertical-align: middle;
+    }
+
+    .previous,
+    .next {
+      cursor: pointer;
+      background-color: #eceef3;
+      -webkit-transition: all 0.25s linear;
+      -moz-transition: all 0.25s linear;
+      -o-transition: all 0.25s linear;
+      transition: all 0.25s linear;
+
+      a {
+        margin-top: 25px;
+        color: $color-black;
+        opacity: 0.5;
+        font-weight: bold;
+      }
+
+      &:hover {
+        background-color: $color-yellow;
+        -webkit-transition: all 0.25s linear;
+        -moz-transition: all 0.25s linear;
+        -o-transition: all 0.25s linear;
+        transition: all 0.25s linear;
+
+        a {
+          opacity: 1;
+        }
+      }
+    }
   }
 }
