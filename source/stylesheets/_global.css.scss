@@ -38,7 +38,6 @@ strong {
   h1 {
     color: $color-white;
     display: inline-block;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, .5);
 
       @include breakpoint(mobile) {
         width: 100%;
@@ -77,42 +76,37 @@ body#root  {
   background-image:     -ms-linear-gradient(top, $color-yellow, $color-buff); /* For pre-releases of IE 10*/
   background-image:      -o-linear-gradient(top, $color-yellow, $color-buff); /* For old Opera (11.1 to 12.0) */
   background-image:         linear-gradient(to bottom, $color-yellow, $color-buff); /* Standard syntax; must be last */
-  //background-color: $color-yellow; /* fallback color if gradients are not supported */
-  //background: url("/images/bg.jpg") 40% center fixed;
-  //background-repeat: repeat-x;
+  background-color: darken($color-yellow, 2.5%); /* fallback color if gradients are not supported */
 
   @include breakpoint(tablet) {
-    //background: url("/images/bg.jpg") left center fixed;
-    //background-size: 200%;
-    //background-repeat: repeat-x;
   }
 
   @include breakpoint(mobile) {
-    //background: url("/images/bg.jpg") left top fixed;
-    //background-color: $color-black; /* fallback color if gradients are not supported */
-    //background-size: 200%;
-    //background-repeat: repeat-x;
   }
 }
 
 body#resume  {
-  background-image: -webkit-linear-gradient(top, $color-buff, $color-peach); /* For Chrome and Safari */
-  background-image:    -moz-linear-gradient(top, $color-buff, $color-peach); /* For old Fx (3.6 to 15) */
-  background-image:     -ms-linear-gradient(top, $color-buff, $color-peach); /* For pre-releases of IE 10*/
-  background-image:      -o-linear-gradient(top, $color-buff, $color-peach); /* For old Opera (11.1 to 12.0) */
-  background-image:         linear-gradient(to bottom, $color-buff, $color-peach); /* Standard syntax; must be last */
-  //background: url("/images/resume-bg.jpg") no-repeat center top fixed;
+  background-image: -webkit-linear-gradient(top, lighten($color-buff, 5%), $color-buff); /* For Chrome and Safari */
+  background-image:    -moz-linear-gradient(top, lighten($color-buff, 5%), $color-buff); /* For old Fx (3.6 to 15) */
+  background-image:     -ms-linear-gradient(top, lighten($color-buff, 5%), $color-buff); /* For pre-releases of IE 10*/
+  background-image:      -o-linear-gradient(top, lighten($color-buff, 5%), $color-buff); /* For old Opera (11.1 to 12.0) */
+  background-image:         linear-gradient(to bottom, lighten($color-buff, 5%), $color-buff); /* Standard syntax; must be last */
   background-color: darken($color-peach, 2.5%); /* fallback color if gradients are not supported */
 
+  //background-image: -webkit-linear-gradient(top, $color-buff, $color-peach); /* For Chrome and Safari */
+  //background-image:    -moz-linear-gradient(top, $color-buff, $color-peach); /* For old Fx (3.6 to 15) */
+  //background-image:     -ms-linear-gradient(top, $color-buff, $color-peach); /* For pre-releases of IE 10*/
+  //background-image:      -o-linear-gradient(top, $color-buff, $color-peach); /* For old Opera (11.1 to 12.0) */
+  //background-image:         linear-gradient(to bottom, $color-buff, $color-peach); /* Standard syntax; must be last */
+  //background-color: darken($color-peach, 2.5%); /* fallback color if gradients are not supported */
+
   @include breakpoint(tablet) {
-    //background: url("/images/resume-bg.jpg") left top fixed;
     background-color: darken($color-peach, 2.5%); /* fallback color if gradients are not supported */
     background-size: 200%;
     background-repeat: repeat-x;
   }
 
   @include breakpoint(mobile) {
-    //background: url("/images/resume-bg.jpg") left top fixed;
     background-color: darken($color-peach, 2.5%); /* fallback color if gradients are not supported */
     background-size: 200%;
     background-repeat: repeat-x;

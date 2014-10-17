@@ -1,19 +1,26 @@
 #root {
   .title {
-    margin-top: 5%;
-    text-align: right;
-    margin-right: 15px;
-    text-shadow: 1px 1px 4px rgba(0, 0, 0, .5);
+    margin-top: 4%;
+    text-align: center;
+    width: 70%;
+    margin-left: 175px;
+    margin-right: auto;
 
     @include breakpoint(mobile) {
       width: 100%;
       margin: 0;
     }
+
+    img {
+      width: 175px;
+      margin-bottom: 20px;
+    }
   }
 
   h1 {
+    color: $color-black;
     @include breakpoint(mobile) {
-      text-align: left;
+      text-align: center;
       margin: 0 0 5px;
     }
   }
@@ -22,6 +29,7 @@
     display: inline-block;
 
     h1 {
+      color: $color-black;
       @include breakpoint(mobile) {
         font-size: 1.5em;
       }
@@ -30,34 +38,36 @@
     @include breakpoint(mobile) {
       width: 100%;
     }
+
+    h2 {
+      font-size: 1.7em;
+    }
   }
 
   .line-three {
-    h1 {
-      @include breakpoint(mobile) {
-        font-size: 1.2em;
-      }
-    }
-    @include breakpoint(mobile) {
-      width: 100%;
+    h2 {
+      margin-left: 5px;
+      margin-top: 10px;
     }
   }
 
   .bio {
-    width: 779px;
-    margin-left: auto;
-    margin-right: 25px;
+    width: 70%;
+    margin-left: 172px;
+    margin-right: auto;
     padding: 25px;
-    color: $color-white;
-    background-color: rgba(0,0,0,0.5);
-    border-radius: 3px;
-    margin-top: 25px;
+    color: $color-black;
+    margin-top: 10px;
     font-size: 16px;
-    text-align: left;
+    text-align: center;
     line-height: 1.5;
     letter-spacing: 1px;
+    //background-color: #2d2d2d;
+    //color: #eeeeee;
+    font-weight: 300;
 
     p {
+      font-size: 18px;
       &:first-child {
         margin-top: 0;
       }
@@ -68,6 +78,23 @@
       margin: 0 0 5px;
       font-size: 0.85em;
       padding: 20px;
+    }
+    a {
+    color:  $color-peach;
+    font-style: normal;
+    cursor: pointer;
+    -webkit-transition: all 0.25s linear;
+    -moz-transition: all 0.25s linear;
+    -o-transition: all 0.25s linear;
+    transition: all 0.25s linear;
+
+      &:hover {
+        color: $color-plum;
+        -webkit-transition: all 0.25s linear;
+        -moz-transition: all 0.25s linear;
+        -o-transition: all 0.25s linear;
+        transition: all 0.25s linear;
+      }
     }
   }
 
