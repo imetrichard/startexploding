@@ -15,6 +15,14 @@ nav.top-bar {
       -o-transition: all 0.5s ease;
       transition: all 0.5s ease;
 
+      .active {
+        background-color: $color-peach;
+
+        &:hover {
+          color: #fff;
+        }
+      }
+
       &:hover {
         color: $color-peach;
         a, i {
