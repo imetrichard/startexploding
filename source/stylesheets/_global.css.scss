@@ -41,6 +41,9 @@ body, .area {
   margin: 0;
   background-repeat: no-repeat;
   background-attachment: fixed;
+  @include breakpoint(mobile) {
+    min-height: 0;
+  }
 }
 
 #root  {
@@ -143,3 +146,5 @@ button {
     border: 1px solid darken($color-peach, 20%);
   }
 }
+
+

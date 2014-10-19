@@ -8,12 +8,20 @@
 
     @include breakpoint(mobile) {
       width: 100%;
-      margin: 0;
+      margin-left: auto;
+      margin-right: auto;
+      padding-top: 15%;
     }
 
     img {
       width: 175px;
       margin-bottom: 20px;
+    }
+  }
+
+  &.area {
+    @include breakpoint(mobile) {
+      height: auto;
     }
   }
 
@@ -62,8 +70,6 @@
     text-align: center;
     line-height: 1.5;
     letter-spacing: 1px;
-    //background-color: #2d2d2d;
-    //color: #eeeeee;
     font-weight: 300;
 
     p {
@@ -71,11 +77,14 @@
       &:first-child {
         margin-top: 0;
       }
+      @include breakpoint(mobile) {
+        font-size: 14px;
+      }
     }
 
     @include breakpoint(mobile) {
       width: 100%;
-      margin: 0 0 5px;
+      margin: 0;
       font-size: 0.85em;
       padding: 20px;
     }

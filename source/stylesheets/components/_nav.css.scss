@@ -4,6 +4,21 @@ nav.top-bar {
   margin: 0;
   position: fixed;
 
+  .container {
+    width: 45%;
+    margin: auto;
+
+    @include breakpoint(tablet) {
+      margin: 0;
+      width: auto;
+    }
+
+    @include breakpoint(mobile) {
+      margin: 0;
+      width: auto;
+    }
+  }
+
   ul {
     margin: 0;
     padding: 0;

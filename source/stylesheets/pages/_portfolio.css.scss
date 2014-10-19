@@ -38,6 +38,11 @@
       -o-transition: all 0.5s linear;
       transition: all 0.5s linear;
 
+      @include breakpoint(mobile) {
+        width: 97%;
+        height: auto;
+      }
+
         &:hover {
           background-color: rgba(255, 255, 255, 0.1);
           -webkit-transition: all 0.5s linear;
@@ -58,38 +63,77 @@
         margin-right: 5%;
         float: left;
 
+        @include breakpoint(mobile) {
+          width: 65%;
+          margin: auto;
+          float: none;
+          height: auto;
+        }
+
         img {
           width: 300px;
+
+          @include breakpoint(mobile) {
+            margin-left: 10px;
+            width: 100%;
+            margin: 25px 0;
+          }
 
           &.keiser {
             margin-top: 60px;
             margin-left: 17%;
+            @include breakpoint(mobile) {
+              margin-left: 10px;
+              width: 100%;
+              margin: 25px 0;
+            }
           }
           &.amoeba {
             height: 150px;
             margin-top: 25px;
             margin-left: 15%;
-          }
-          &.icc {
-            margin-top: 40px;
-            margin-left: 15%;
+            @include breakpoint(mobile) {
+              margin-left: 10px;
+              width: 100%;
+              margin: 25px 0;
+            }
           }
           &.fuze {
             width: 60%;
             margin-top: 60px;
             margin-left: 50px;
+            @include breakpoint(mobile) {
+              margin-left: 10px;
+              width: 100%;
+              margin: 25px 0;
+            }
           }
           &.vulume {
             margin-top: 75px;
             margin-left: 15%;
+            @include breakpoint(mobile) {
+              margin-left: 10px;
+              width: 100%;
+              margin: 25px 0;
+            }
           }
           &.exumit {
             margin-top: 55px;
             margin-left: 13%;
+            @include breakpoint(mobile) {
+              margin-left: 10px;
+              width: 100%;
+              margin: 25px 0;
+            }
           }
           &.htf {
             margin-top: 20px;
             margin-left: 15%;
+          @include breakpoint(mobile) {
+            margin-left: 10px;
+            width: 100%;
+            margin: 25px 0;
+          }
           }
         }
       }
@@ -102,6 +146,14 @@
         text-align: right;
         height: 200px;
         line-height: 200px;
+
+        @include breakpoint(mobile) {
+          width: 100%;
+          line-height: 1;
+          float: none;
+          padding: 0 20px 20px;
+          height: auto;
+        }
 
         em {
           font-weight: 600;
@@ -116,6 +168,11 @@
           display: inline-block;
           vertical-align: middle;
           line-height: 23px;
+
+          @include breakpoint(mobile) {
+            font-size: 12px;
+            line-height: 1.4;
+          }
         }
       }
     }
