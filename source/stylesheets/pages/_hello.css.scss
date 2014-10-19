@@ -1,10 +1,10 @@
 #root {
   .title {
-    margin-top: 4%;
     text-align: center;
     width: 70%;
     margin-left: 175px;
     margin-right: auto;
+    padding-top: 7%;
 
     @include breakpoint(mobile) {
       width: 100%;

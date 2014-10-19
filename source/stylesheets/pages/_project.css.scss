@@ -102,6 +102,7 @@
 
   .case-study {
     width: 100%;
+    padding-top: 45px;
 
     h3 {
       margin-top: 0;
@@ -114,16 +115,27 @@
       text-align: center;
 
       .fuze {
-        background-color: rgba(0, 193, 213, 0.75)
+        background-color: rgba(0, 193, 213, 0.75);
+        height: 100%;
+        .info {
+          background-color: rgba(0,0,0,0.1);
+        }
       }
 
       &.vulume {
         background-color: #85ccc2;
-        height: 175px;
+        height: 100%;
+        .info {
+          background-color: rgba(0,0,0,0.1);
+        }
       }
 
       &.htf {
-        background-color: rgba(46, 204, 113, 0.75)
+        background-color: rgba(46, 204, 113, 0.75);
+        height: 100%;
+        .info {
+          background-color: rgba(0,0,0,0.1);
+        }
       }
 
       .play {
