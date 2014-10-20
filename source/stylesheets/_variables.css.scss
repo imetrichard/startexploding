@@ -9,43 +9,6 @@ $color-white: #eeeeee;
 $color-black: #2d2d2d;
 $color-brown: #462914;
 
-// Header Styles
-.bar  {
-  padding: 10px;
-  color: $color-white;
-  display: inline-block;
-}
-
-// Custom Fonts
-body, p, h1, h2, h3 {
-  font-family: 'Lato', sans-serif;
-}
-
-// Link Styles
-
-a {
-  color:  $color-yellow;
-  font-style: normal;
-  cursor: pointer;
-  -webkit-transition: all 0.25s linear;
-  -moz-transition: all 0.25s linear;
-  -o-transition: all 0.25s linear;
-  transition: all 0.25s linear;
-
-  &:hover {
-    color: $color-violet;
-    -webkit-transition: all 0.25s linear;
-    -moz-transition: all 0.25s linear;
-    -o-transition: all 0.25s linear;
-    transition: all 0.25s linear;
-  }
-}
-
-em {
-  color:  $color-yellow;
-  font-style: normal;
-}
-
 // Mixins
 // Use by inclding the following under elements
 //  @include breakpoint(tablet) {

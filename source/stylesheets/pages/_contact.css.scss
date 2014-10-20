@@ -22,9 +22,12 @@
     width: 500px;
     margin: auto;
     text-align: center;
+    margin-left: 50px;
+
     @include breakpoint(mobile) {
       width: auto;
       font-size: 1.8em;
+      margin: 0;
     }
   }
 
@@ -34,16 +37,18 @@
     -moz-transition: all 0.5s ease-in-out;
     -o-transition: all 0.5s ease-in-out;
     transition: all 0.5s ease-in-out;
+    margin-left: 45px;
 
     @include breakpoint(mobile) {
       width: 98%;
       font-size: .9em;
+      margin: 0;
     }
 
     &:hover {
-      color: $color-peach;
+      color: $color-yellow;
       a, i {
-        color: $color-peach;
+        color: $color-yellow;
         -webkit-transition: all 0.5s ease-in-out;
         -moz-transition: all 0.5s ease-in-out;
         -o-transition: all 0.5s ease-in-out;
@@ -57,13 +62,20 @@
     }
   }
 
+  .social {
+    margin-left: 100px;
+    @include breakpoint(mobile) {
+      margin: 0;
+    }
+  }
+
   h3.bar {
     padding: 22px;
-    margin-left: 7px;
-    -webkit-transition: all 0.5s ease-in-out;
-    -moz-transition: all 0.5s ease-in-out;
-    -o-transition: all 0.5s ease-in-out;
-    transition: all 0.5s ease-in-out;
+    margin-left: 10px;
+    -webkit-transition: all 0.5s linear;
+    -moz-transition: all 0.5s linear;
+    -o-transition: all 0.5s linear;
+    transition: all 0.5s linear;
 
     @include breakpoint(mobile) {
       padding: 16px;
@@ -71,7 +83,7 @@
 
     &:hover {
       i {
-        color: $color-peach;
+        color: $color-yellow;
         -webkit-transition: all 0.5s ease-in-out;
         -moz-transition: all 0.5s ease-in-out;
         -o-transition: all 0.5s ease-in-out;
@@ -91,16 +103,5 @@
         font-size: 1.3em;
       }
     }
-  }
-
-
-  .contact-info {
-    padding: 25px 60px;
-    background-color: rgba(0, 0, 0, 0.75);
-    color: $color-white;
-    width: 700px;
-    margin-left: 25px;
-    display: block;
-    text-align: left;
   }
 }

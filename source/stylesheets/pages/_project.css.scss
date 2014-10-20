@@ -24,9 +24,7 @@
     width: 65%;
 
     @include breakpoint(mobile) {
-      width: 98%;
-      margin-left: 1%;
-      margin-right: 1%;
+      margin: 0;
     }
 
     section {
@@ -113,30 +111,7 @@
       margin: 0;
       position: relative;
       text-align: center;
-
-      .fuze {
-        background-color: rgba(0, 193, 213, 0.75);
-        height: 100%;
-        .info {
-          background-color: rgba(0,0,0,0.1);
-        }
-      }
-
-      &.vulume {
-        background-color: #85ccc2;
-        height: 100%;
-        .info {
-          background-color: rgba(0,0,0,0.1);
-        }
-      }
-
-      &.htf {
-        background-color: rgba(46, 204, 113, 0.75);
-        height: 100%;
-        .info {
-          background-color: rgba(0,0,0,0.1);
-        }
-      }
+      background-color: #eceef3;
 
       .play {
 
@@ -156,6 +131,10 @@
             -moz-transition: all 0.5s ease-out;
             -o-transition: all 0.5s ease-out;
             transition: all 0.5s ease-out;
+          }
+          @include breakpoint(mobile) {
+            position: initial;
+            margin-top: 30px;
           }
         }
 
@@ -184,7 +163,7 @@
 
         h2 {
           font-size: 20px;
-          color: #f8f8ff;
+          color: #4d4d4d;
           margin-bottom: 10px;
           margin-top: 10px;
           font-weight: 300;
@@ -202,6 +181,10 @@
       background-color: rgba(0,0,0,0);
       padding: 10px 10%;
       margin-bottom: 150px;
+      @include breakpoint(mobile) {
+        padding: 0px;
+        margin-bottom: 150px;
+      }
     }
 
     article {
@@ -210,6 +193,9 @@
       width: 90%;
       margin-left: auto;
       margin-right: auto;
+      @include breakpoint(mobile) {
+        padding: 0 10px;
+      }
     }
   }
   footer {
@@ -236,6 +222,9 @@
         text-align: center;
         color: $color-black;
         margin-top: 40px;
+        @include breakpoint(mobile) {
+         margin-top: 25px;
+        }
       }
 
       button {
@@ -253,6 +242,9 @@
       text-align: center;
       line-height: 7;
       vertical-align: middle;
+      @include breakpoint(mobile) {
+        display: none;
+      }
     }
 
     .next {
@@ -263,6 +255,9 @@
       text-align: center;
       line-height: 7;
       vertical-align: middle;
+      @include breakpoint(mobile) {
+        display: none;
+      }
     }
 
     .previous,
