@@ -15,7 +15,6 @@
 
     img {
       width: 175px;
-      margin-left: 50px;
       margin-bottom: 35px;
     }
   }
@@ -24,6 +23,13 @@
     @include breakpoint(mobile) {
       height: auto;
     }
+  }
+
+  .intro {
+    margin: auto;
+    display: block;
+    width: 90%;
+    padding-top: 45px;
   }
 
   h1 {
