@@ -155,6 +155,10 @@
           height: auto;
         }
 
+        @include breakpoint(tablet) {
+          padding-left: 25px;
+        }
+
         em {
           font-weight: 600;
           display: block;
@@ -168,6 +172,10 @@
           display: inline-block;
           vertical-align: middle;
           line-height: 23px;
+
+          @include breakpoint(tablet) {
+            line-height: 21px;
+          }
 
           em {
             color: $color-peach;

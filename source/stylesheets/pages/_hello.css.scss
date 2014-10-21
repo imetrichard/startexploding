@@ -1,7 +1,7 @@
 #root {
   .title {
     text-align: center;
-    width: 70%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     padding-top: 9%;
@@ -13,9 +13,15 @@
       padding-top: 15%;
     }
 
+    @include breakpoint(tablet) {
+      width: 90%;
+    }
+
     img {
       width: 175px;
       margin-bottom: 35px;
+      display: block;
+      margin: auto;
     }
   }
 
@@ -45,8 +51,15 @@
 
     h1 {
       color: $color-black;
+      padding: 25px 0 10px 0;
+      text-align: center;
+
       @include breakpoint(mobile) {
         font-size: 1.5em;
+      }
+      @include breakpoint(tablet) {
+        text-align: center;
+        font-size: 32px;
       }
     }
 
@@ -67,7 +80,7 @@
   }
 
   .bio {
-    width: 70%;
+    width: 80%;
     margin-left: auto;
     margin-right: auto;
     padding: 25px;
@@ -89,12 +102,17 @@
       }
     }
 
+    @include breakpoint(tablet) {
+      width: 85%;
+    }
+
     @include breakpoint(mobile) {
       width: 100%;
       margin: 0;
       font-size: 0.85em;
       padding: 20px;
     }
+
     a {
     color:  $color-peach;
     font-style: normal;

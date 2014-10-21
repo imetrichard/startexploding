@@ -38,6 +38,12 @@
       margin-right: 1%;
     }
 
+    @include breakpoint(tablet) {
+      width: 90%;
+      margin-left: 5%;
+      margin-right: 5%;
+    }
+
     .clear {
       background-color: rgba(0, 0, 0, 0);
       padding: 0;
@@ -79,6 +85,9 @@
 
   .work {
     margin-left: 0;
+    @include breakpoint(tablet) {
+      margin-left: 35px;
+    }
   }
 
   h2.bar {
@@ -145,6 +154,9 @@
   .tagbar {
     @include breakpoint(mobile) {
       display: none;
+    }
+    @include breakpoint(tablet) {
+     display: none;
     }
   }
 
