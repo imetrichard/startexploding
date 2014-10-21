@@ -5,7 +5,7 @@ nav.top-bar {
   position: fixed;
 
   .container {
-    width: 45%;
+    width: 500px;
     margin: auto;
 
     @include breakpoint(tablet) {
@@ -16,6 +16,10 @@ nav.top-bar {
     @include breakpoint(mobile) {
       margin: 0;
       width: auto;
+    }
+
+    h1 {
+      padding-left: 0;
     }
   }
 

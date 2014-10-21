@@ -69,8 +69,8 @@ body, .area {
   background-size: cover;
 
   @include breakpoint(mobile) {
-    background: url("/images/bg-y.jpg") no-repeat left top fixed;
-    background-size: auto 100%;
+    background: url("/images/bg-y.jpg") no-repeat center left fixed;
+    background-size: cover;
   }
 
 }
