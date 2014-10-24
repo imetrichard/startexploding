@@ -88,6 +88,10 @@
     @include breakpoint(tablet) {
       margin-left: 35px;
     }
+
+    @include breakpoint(tablet) {
+    margin-left: 0px;
+  }
   }
 
   h2.bar {

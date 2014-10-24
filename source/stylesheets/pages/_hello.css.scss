@@ -1,4 +1,7 @@
 #root {
+  @include breakpoint(mobile) {
+    height: 100%;
+  }
 
   .title {
     text-align: center;
@@ -41,7 +44,8 @@
     height: 500px;
     max-width: 1300px;
     @include breakpoint(mobile) {
-      height: 650px;
+      height: 100%;
+      padding-top: 75px;
     }
   }
 
