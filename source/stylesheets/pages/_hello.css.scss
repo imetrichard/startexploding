@@ -1,8 +1,4 @@
 #root {
-  @include breakpoint(mobile) {
-    height: 100%;
-  }
-
   .title {
     text-align: center;
     width: 80%;
@@ -24,13 +20,16 @@
       margin-bottom: 35px;
       display: block;
       margin: auto;
+      @include breakpoint(mobile) {
+        width: 130px;
+        margin-bottom: 0px;
+      }
     }
   }
 
   &.area {
-
     @include breakpoint(mobile) {
-      height: 100%;
+      min-height: 800px;
     }
   }
 
@@ -44,16 +43,8 @@
     height: 500px;
     max-width: 1300px;
     @include breakpoint(mobile) {
-      height: 100%;
+      height: auto;
       padding-top: 75px;
-    }
-  }
-
-  h1 {
-    color: $color-black;
-    @include breakpoint(mobile) {
-      text-align: center;
-      margin: 0 0 5px;
     }
   }
 
@@ -65,12 +56,21 @@
       padding: 25px 0 10px 0;
       text-align: center;
 
-      @include breakpoint(mobile) {
-        font-size: 1.5em;
-      }
       @include breakpoint(tablet) {
         text-align: center;
         font-size: 32px;
+      }
+
+      @include breakpoint(mobile) {
+        text-align: center;
+        margin: 0 0 5px;
+        font-size: 1.5em;
+      }
+    }
+
+    strong {
+      @include breakpoint(mobile) {
+        display: block;
       }
     }
 
@@ -80,6 +80,9 @@
 
     h2 {
       font-size: 1.7em;
+      @include breakpoint(mobile) {
+        font-size: 1.2em;
+      }
     }
   }
 
@@ -110,6 +113,7 @@
       }
       @include breakpoint(mobile) {
         font-size: 14px;
+        width: 100%;
       }
     }
 
