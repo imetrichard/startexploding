@@ -1,0 +1,138 @@
+<body id="project" xmlns="http://www.w3.org/1999/html">
+
+  <div class="work case-study">
+    <header>
+      <div class="exumit">
+        <div class="info">
+          <%= image_tag '/images/clients/exumit.svg' %>
+          <h2>Think of Exumit as Glassdoor meets Yelp -- a review site where salespeople share the secrets of making
+            deals with companies they sell to.</h2>
+        </div>
+      </div>
+    </header>
+
+    <section>
+      <article>
+
+        <!--<%= image_tag("portfolio/exumit1.jpg", :alt => "Exumit") %>-->
+
+        <h3>For Salespeople by Salespeople</h3>
+
+        <p>Exumit began as an idea crafted by its two founders, Silicon Valley entrepreneurs who got their start in
+          sales. As with so many ideas it began with trying to solve their own use case. Career salespeople know the
+          sales process is so variable, getting a purchase order can be a piece of cake with one company but with the
+          next it can be a grueling six-month effort. Wouldn’t it be great, before walking into a sale, to get a better
+          idea of how difficult the sale could be? Wouldn’t it also be great to have tips to help the salesperson
+          navigate the process more easily? Who to talk to, who not to talk to, etc.?  Really, the only people who
+          had that knowledge were the salespeople who previously sold to those companies. The overarching problem
+          showed -- How do we create a product that allows salespeople to share secrets? Even more so, how do we
+          identify the incentive for salespeople to share those secrets?
+        </p>
+
+        <%= image_tag("portfolio/exumit1.jpg", :alt => "Exumit") %>
+
+        <h3>Understanding the Audience</h3>
+
+        <p>We had complete access to proxies for the target audience, salespeople, so we began there. Being non-sales
+          people ourselves we needed to understand what sort of product would be useful to them by discovering through
+          interviews who they were and what they did. “Tell us more about the way you work.” “What do you sell, who do
+          you sell to and how do you do it?” We asked them about how they shared information and also what motivated
+          them both personally and professionally. </p>
+
+        <%= image_tag("portfolio/exumit_1.jpg", :alt => "Exumit") %>
+
+        <p>After the interviews, we had a bit better grasp of who we were building for, but not a complete picture.
+          Asking customers is only one part of the equation; what people say and what people do are not always the same.
+          So we embedded ourselves. We sat with salespeople doing their jobs. What tools were they using? What tabs did
+          they have open in their browsers? We saw how they researched and how they sold, how they documented their sales
+          and how they projected their sales. We asked when we needed clarification but most of the time we just observed
+          and took notes.
+        </p>
+
+        <h3>The Need for Anonymity</h3>
+        <p>
+          One thing was clear, there was hesitation among salespeople to share the advice. Not because it would hurt
+          their numbers. In fact, sharing this sort of information was extremely useful for the sales community. It was
+          because sharing such information could have some ramifications. The general feeling was sharing this type of
+          insider information about both negative and positive aspects of a sale could harm relationships with the
+          companies they sold to.
+        </p>
+
+        <p>
+          To combat this hesitation we designed and implemented a completely anonymous system where users could create
+          reviews with an anonymous profile. Instead of profile photos we gave users the ability to create a custom
+          avatar. This provided us with other opportunities. We could use the avatar creator to allow users to display
+          how much they have contributed to the app through unlockables within the system. These unlockables were earned
+          by performing actions on the site such as writing a review or following companies and other users.
+        </p>
+
+        <%= image_tag("portfolio/avatar1.png", :alt => "Exumit") %>
+        User interface design for proposed user avatar creator.
+
+
+        <%= image_tag("portfolio/avatar4.png", :alt => "Exumit") %>
+        Using some simple sliders and customization options, the avatar begins to come to life.
+
+        <p>
+          We had to balance the system’s complexity to allow for both wealth of customization options as well as ease
+          of use. The system had to be easy to pick up and low density but be something users were excited to use
+          because of the virtually unlimited possibilities of adjustments. With this in mind we then began working
+          with developers to compile a guiding functional specification for the feature.
+        </p>
+
+        <h3>Increasing Engagement</h3>
+        <p>
+          In addition to unlockables the user could use in the avatar creator, we also wanted to incorporate a sense of
+          gamification in the user profile using player stats. Their score card was emailed weekly as part as an email
+          which contained the latest reviews for both companies and users they followed. This email campaign worked to
+          help keep users engaged in the site by ensuring they would get the latest information on pertinent companies
+          as well as enticing them to earn a high rank by performing actions on the site.
+        </p>
+        <%= image_tag("portfolio/exumit2.png", :alt => "Exumit") %>
+
+        <p>
+          After three months of work the MVP (Minimum Viable Product) was delivered. We helped train the founding team
+          in the ways of agile development and design as they worked to continue the site with their own team. Exumit is
+          now in an open beta. Visit http://exumit.com/ to find out more.
+        </p>
+      </article>
+    </section>
+
+    <footer>
+      <div class="previous">
+        <a href="../../index.html#portfolio">See All Projects</a>
+      </div>
+      <div class="contact">
+        <h1>Want to hear more about this project?</h1>
+        <a href="mailto:richardenlow@gmail.com?subject=Hello Richard!" target="_blank">
+          <button>Let's Connect</button>
+        </a>
+      </div>
+      <div class="next">
+        <!--<a href="vulume.html">See Next Project</a>-->
+      </div>
+    </footer>
+
+  </div>
+</body>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42734287-1', 'herokuapp.com');
+  ga('send', 'pageview');
+
+</script>
+
+<script>
+  document.write('<script src=/javascripts/vendor/'
+    + ('__proto__' in {} ? 'zepto' : 'jquery')
+    + '.js><\/script>');
+</script>
+
+<script>
+  $(document).foundation();
+</script>
