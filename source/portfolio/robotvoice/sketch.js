@@ -10,8 +10,8 @@ var sqY;
 function setup () {
   mic = new p5.AudioIn();
   mic.start();
-  fft = new p5.FFT();
-  fft.setInput(mic);
+  // fft = new p5.FFT();
+  // fft.setInput(mic);
   
   colorMode(HSB, 360, 100, 100);
   createCanvas(windowWidth, windowHeight);
@@ -21,7 +21,7 @@ function setup () {
 }
 
 function draw () {
-  var spectrum = fft.analyze();
+  // var spectrum = fft.analyze();
   var bg = map(mouseX, 0, width, 255, 0);
   background(bg, 100, 100);
   fill(28, 10, 28);
@@ -34,9 +34,9 @@ function draw () {
   ellipse(circle1X, height/2-150, width/10, width/10);
   ellipse(circle2X, height/2-150, width/10, width/10);
   
-  for (i = 0; i<spectrum.length; i+= 50) {
-    var radius = map(spectrum[i], 60, 255, 20, 175);
-    fill(150, 255, 255);
-    rect(sqX, height/2+125, width/2,radius);
-  }
+  // for (i = 0; i<spectrum.length; i+= 50) {
+  //   var radius = map(spectrum[i], 60, 255, 20, 175);
+  //   fill(150, 255, 255);
+  //   rect(sqX, height/2+125, width/2,radius);
+  // }
 }
