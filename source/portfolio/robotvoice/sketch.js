@@ -18,6 +18,14 @@ function setup () {
   rectMode(CENTER);
   noStroke();
   noCursor();
+  capture = createCapture(AUDIO);
+  
+  var constraints = {
+    audio: true
+  };
+  createCapture(constraints, function(stream) {
+    console.log(stream);
+  });
 }
 
 function draw () {
