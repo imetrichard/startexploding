@@ -1,6 +1,5 @@
 var i;
 var mic, fft;
-var eye;
 var circle1X;
 var circle2X;
 var bg;
@@ -9,6 +8,12 @@ var sqY;
 
 function setup () {
   mic = new p5.AudioIn();
+  mic.getSources(function(sourceList) {
+     //print out the array of available sources
+     console.log(sourceList);
+     //set the source to the first item in the inputSources array
+     mic.setSource(0);
+  });
   mic.start();
   // fft = new p5.FFT();
   // fft.setInput(mic);
@@ -18,14 +23,6 @@ function setup () {
   rectMode(CENTER);
   noStroke();
   noCursor();
-  capture = createCapture(AUDIO);
-  
-  var constraints = {
-    audio: true
-  };
-  createCapture(constraints, function(stream) {
-    console.log(stream);
-  });
 }
 
 function draw () {
