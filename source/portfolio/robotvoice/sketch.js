@@ -34,6 +34,11 @@ function draw () {
   ellipse(circle1X, height/2-150, width/10, width/10);
   ellipse(circle2X, height/2-150, width/10, width/10);
   
+  var vol = mic.getLevel();
+  fill(150, 255, 255);
+  var m = map(vol, 0, 1, 40, 375);
+  rect(sqX, height/2+125, width/2,m);
+  
   // for (i = 0; i<spectrum.length; i+= 50) {
   //   var radius = map(spectrum[i], 60, 255, 20, 175);
   //   fill(150, 255, 255);
