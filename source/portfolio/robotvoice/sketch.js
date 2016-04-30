@@ -14,9 +14,9 @@ function setup () {
      //set the source to the first item in the inputSources array
      mic.setSource(0);
   });
-  connect = new p5.FFT();
-  connect.setInput(mic);
-  // connect(getLevel);
+  // connect = new p5.FFT();
+  // connect.setInput(mic);
+  mic.connect();
   mic.start();
   // fft = new p5.FFT();
   // fft.setInput(mic);
