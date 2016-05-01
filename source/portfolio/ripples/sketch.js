@@ -29,6 +29,7 @@ function draw() {
   stroke(3, 232, 235, wave -= 2);
   strokeWeight(5);
   
+  
  ellipse(circle.x, circle.y, circle.starSize++, circle.starSize++);
   
   if (circle.starSize > windowWidth * 2 && circle.starSize > windowHeight * 2) {
