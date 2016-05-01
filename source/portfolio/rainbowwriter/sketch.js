@@ -9,7 +9,7 @@ var palette = [];
 var letterVar;
 
 function setup () { 
-  createCanvas(1280, 720);
+  createCanvas(windowWidth, windowHeight);
 }
 
 function draw () {
