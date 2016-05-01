@@ -36,7 +36,7 @@ function draw() {
   if (circle.starSize > windowWidth * 2.5 && circle.starSize > windowHeight * 2.5) {
     circle.starSize = 0;
     wave = 255;
-  stroke(255, 255, 255);
+    stroke(255, 255, 255);
     song.play();
   }
 }

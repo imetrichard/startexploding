@@ -1,5 +1,4 @@
 var star;
-// var starSize = 10;
 var r = 3;
 var g = 193;
 var b = 235;
@@ -14,21 +13,22 @@ var circle = {
 
 function preload() {
   song = loadSound('assets/drop.wav');
-  song.setVolume(0.5);
+  pond = loadSound('assets/pond.ogg');
+  song.setVolume(0.2);
+  pond.setVolume(0.5);
 }
 
 function setup() {
   createCanvas(windowWidth, windowHeight);
   background(r, g, b);
   fill(r, g, b);
+  pond.loop();
 }
 
 function draw() {
-  // fill(248, 255, 14);
   fill(r, g, b);
   stroke(3, 232, 235, wave -= 2);
   strokeWeight(5);
-  
   
  ellipse(circle.x, circle.y, circle.starSize++, circle.starSize++);
   
