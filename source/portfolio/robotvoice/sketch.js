@@ -1,13 +1,14 @@
 var i;
-var mic, fft;
+var mic;
+var fft;
 var circle1X;
 var circle2X;
 var bg;
 var sqx;
 var sqY;
+var mic = new p5.AudioIn();
 
 function setup () {
-  mic = new p5.AudioIn();
   mic.getSources(function(sourceList) {
      //print out the array of available sources
      console.log(sourceList);

@@ -1,4 +1,4 @@
-/*! p5.sound.js v0.3.0 2016-04-07 */
+/*! p5.sound.js v0.3.0 2016-01-31 */
 (function (root, factory) {
   if (typeof define === 'function' && define.amd)
     define('p5.sound', ['p5'], function (p5) { (factory(p5));});
@@ -1525,7 +1525,7 @@ soundfile = function () {
    *
    * @method jump
    * @param {Number} cueTime    cueTime of the soundFile in seconds.
-   * @param {Number} duration    duration in seconds.
+   * @param {Number} uuration    duration in seconds.
    */
   p5.SoundFile.prototype.jump = function (cueTime, duration) {
     if (cueTime < 0 || cueTime > this.buffer.duration) {
@@ -1737,8 +1737,8 @@ soundfile = function () {
    *
    * @method disconnect
    */
-  p5.SoundFile.prototype.disconnect = function () {
-    this.panner.disconnect();
+  p5.SoundFile.prototype.disconnect = function (unit) {
+    this.panner.disconnect(unit);
   };
   /**
    */
@@ -4382,10 +4382,11 @@ oscillator = function () {
     this.oscillator = p5sound.audiocontext.createOscillator();
     this.f = freq || 440;
     // frequency
-    this.oscillator.type = type || 'sine';
     this.oscillator.frequency.setValueAtTime(this.f, p5sound.audiocontext.currentTime);
+    this.oscillator.type = type || 'sine';
     var o = this.oscillator;
     // connections
+    this.input = p5sound.audiocontext.createGain();
     this.output = p5sound.audiocontext.createGain();
     this._freqMods = [];
     // modulators connected to this oscillator's frequency
@@ -4420,11 +4421,6 @@ oscillator = function () {
     if (!this.started) {
       var freq = f || this.f;
       var type = this.oscillator.type;
-      // set old osc free to be garbage collected (memory)
-      if (this.oscillator) {
-        this.oscillator.disconnect();
-        this.oscillator = undefined;
-      }
       // var detune = this.oscillator.frequency.value;
       this.oscillator = p5sound.audiocontext.createOscillator();
       this.oscillator.frequency.exponentialRampToValueAtTime(Math.abs(freq), p5sound.audiocontext.currentTime);
@@ -4620,6 +4616,7 @@ oscillator = function () {
       var now = p5sound.audiocontext.currentTime;
       this.stop(now);
       this.disconnect();
+      this.oscillator.disconnect();
       this.panner = null;
       this.oscillator = null;
     }
@@ -5475,7 +5472,7 @@ env = function () {
   //helper method to protect against zero values being sent to exponential functions
   p5.Env.prototype.checkExpInput = function (value) {
     if (value <= 0) {
-      value = 1e-8;
+      value = 0.0001;
     }
     return value;
   };
@@ -6293,15 +6290,10 @@ audioin = function () {
    *  feedback.</p> 
    *
    *  <p><em>Note: This uses the <a href="http://caniuse.com/stream">getUserMedia/
-   *  Stream</a> API, which is not supported by certain browsers. Access in Chrome browser
-   *  is limited to localhost and https, but access over http may be limited.</em></p>
+   *  Stream</a> API, which is not supported by certain browsers.</em></p>
    *
    *  @class p5.AudioIn
    *  @constructor
-   *  @param {Function} [errorCallback] A function to call if there is an error
-   *                                    accessing the AudioIn. For example,
-   *                                    Safari and iOS devices do not
-   *                                    currently allow microphone access.
    *  @return {Object} AudioIn
    *  @example
    *  <div><code>
@@ -6317,7 +6309,7 @@ audioin = function () {
    *  }
    *  </code></div>
    */
-  p5.AudioIn = function (errorCallback) {
+  p5.AudioIn = function () {
     // set up audio input
     this.input = p5sound.audiocontext.createGain();
     this.output = p5sound.audiocontext.createGain();
@@ -6336,11 +6328,7 @@ audioin = function () {
     this.output.connect(this.amplitude.input);
     // Some browsers let developer determine their input sources
     if (typeof window.MediaStreamTrack === 'undefined') {
-      if (errorCallback) {
-        errorCallback();
-      } else {
-        window.alert('This browser does not support AudioIn');
-      }
+      window.alert('This browser does not support MediaStreamTrack');
     } else if (typeof window.MediaStreamTrack.getSources === 'function') {
       // Chrome supports getSources to list inputs. Dev picks default
       window.MediaStreamTrack.getSources(this._gotSources);
@@ -6355,11 +6343,6 @@ audioin = function () {
    *  is not connected to p5.sound's output. So you won't hear
    *  anything unless you use the connect() method.<br/>
    *
-   *  Certain browsers limit access to the user's microphone. For example,
-   *  Chrome only allows access from localhost and over https. For this reason,
-   *  you may want to include an errorCallback—a function that is called in case
-   *  the browser won't provide mic access.
-   *
    *  @method start
    *  @param {Function} successCallback Name of a function to call on
    *                                    success.
@@ -6370,7 +6353,6 @@ audioin = function () {
    */
   p5.AudioIn.prototype.start = function (successCallback, errorCallback) {
     var self = this;
-    // if stream was already started...
     // if _gotSources() i.e. developers determine which source to use
     if (p5sound.inputSources[self.currentSource]) {
       // set the audio source
@@ -6415,15 +6397,13 @@ audioin = function () {
     }
   };
   /**
-   *  Turn the AudioIn off. If the AudioIn is stopped, it cannot getLevel().
-   *  If re-starting, the user may be prompted for permission access.
+   *  Turn the AudioIn off. If the AudioIn is stopped, it cannot getLevel().<br/>
    *
    *  @method stop
    */
   p5.AudioIn.prototype.stop = function () {
     if (this.stream) {
-      // assume only one track
-      this.stream.getTracks()[0].stop();
+      this.stream.stop();
     }
   };
   /**
@@ -6454,8 +6434,8 @@ audioin = function () {
    *
    *  @method  disconnect
    */
-  p5.AudioIn.prototype.disconnect = function () {
-    this.output.disconnect();
+  p5.AudioIn.prototype.disconnect = function (unit) {
+    this.output.disconnect(unit);
     // stay connected to amplitude even if not outputting to p5
     this.output.connect(this.amplitude.input);
   };
@@ -7867,8 +7847,6 @@ metro = function () {
       // for all of the active things on the metro:
       for (var i in this.syncedParts) {
         var thisPart = this.syncedParts[i];
-        if (!thisPart.isPlaying)
-          return;
         thisPart.incrementStep(secondsFromNow);
         // each synced source keeps track of its own beat number
         for (var j in thisPart.phrases) {
@@ -8093,8 +8071,12 @@ looper = function () {
     // how many beats
     this.partStep = 0;
     this.phrases = [];
+    this.looping = false;
     this.isPlaying = false;
-    this.noLoop();
+    // what does this looper do when it gets to the last step?
+    this.onended = function () {
+      this.stop();
+    };
     this.tatums = bLength || 0.0625;
     // defaults to quarter note
     this.metro = new p5.Metro();
@@ -8261,11 +8243,11 @@ looper = function () {
       this.callback(time);
       this.partStep += 1;
     } else {
-      if (!this.looping && this.partStep == this.length - 1) {
-        console.log('done');
-        // this.callback(time);
-        this.onended();
+      if (this.looping) {
+        this.callback(time);
       }
+      this.onended();
+      this.partStep = 0;
     }
   };
   /**
@@ -8632,14 +8614,8 @@ soundRecorder = function () {
    *  @param  {String} name      name of the resulting .wav file.
    */
   p5.prototype.saveSound = function (soundFile, name) {
-    var leftChannel, rightChannel;
-    leftChannel = soundFile.buffer.getChannelData(0);
-    // handle mono files
-    if (soundFile.buffer.numberOfChannels > 1) {
-      rightChannel = soundFile.buffer.getChannelData(1);
-    } else {
-      rightChannel = leftChannel;
-    }
+    var leftChannel = soundFile.buffer.getChannelData(0);
+    var rightChannel = soundFile.buffer.getChannelData(1);
     var interleaved = interleave(leftChannel, rightChannel);
     // create the buffer and view to create the .WAV file
     var buffer = new ArrayBuffer(44 + interleaved.length * 2);
