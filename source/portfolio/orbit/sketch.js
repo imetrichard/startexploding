@@ -22,7 +22,7 @@ function draw() {
 function Create() {
   this.diameter = random(5, 40);
   this.col = random(122,197);
-  this.pos = createVector(random(0,width), random(0,height));
+  this.pos = createVector(random(width/2-200,width/2+200), random(height/2-200,height/2+200));
   this.vel = createVector(0,0);
 
   this.move = function() {
