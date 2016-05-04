@@ -4,7 +4,7 @@ var b = 235;
 var img;
 var x = 0.0;
 var y = 0.0;
-var easing = 0.05;
+var easing = 0.025;
 var speed = 1;
 
 var star = [];
@@ -13,7 +13,7 @@ function preload() {
   song = loadSound('assets/peace.wav');
   song.setVolume(0.3);
   blow = loadSound('assets/blow.wav');
-  blow.setVolume(0.5);
+  blow.setVolume(0.2);
 }
 
 function setup() {
@@ -35,15 +35,15 @@ function draw() {
   targetY = mouseY
   dx = targetY - y;
   y += dx * easing;
-  image(img, x += random(0, speed), y+= random(0, speed),img.width/2,img.height/2); 
   for (var i=0; i<star.length; i++) {
     star[i].move();
     star[i].display();
   }
-  if (mouseX>pmouseX+5 || mouseX<pmouseX-5 || mouseY>pmouseY+5 || mouseY<pmouseY-5){
+  if (mouseX>pmouseX+1 || mouseY>pmouseY+1){
     blow.stop();  
     blow.play();  
   }
+  image(img, x += random(0, speed), y+= random(0, speed),img.width/2,img.height/2); 
 }
 
 function Create() {
