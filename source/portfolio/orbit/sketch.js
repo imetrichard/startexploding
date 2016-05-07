@@ -33,16 +33,21 @@ function Create() {
         
     this.vel.add(this.acc);
     this.pos.add(this.vel);
+  
   };
 
   this.display = function() {
     fill(17,this.col,240);
     ellipse(this.pos.x, this.pos.y, this.diameter, this.diameter);
+    this.pos.x = constrain(this.pos.x,0-this.diameter,width+this.diameter)
+    this.pos.y = constrain(this.pos.y,0-this.diameter,height+this.diameter)
+    
     if (this.pos.x>pmouseX){
-      ellipse(this.pos.x, this.pos.y, this.diameter, this.diameter+20*easing);
+      ellipse(this.pos.x, this.pos.y, this.diameter, this.diameter+random(10,100)*easing);
     }
     if (this.pos.y>pmouseY){
-      ellipse(this.pos.x, this.pos.y, this.diameter, this.diameter-20*easing);
+      ellipse(this.pos.x, this.pos.y, this.diameter, this.diameter-random(10,100)*easing);
     }
+
   };
 }
