@@ -1,14 +1,15 @@
 var bMultiplier = 0.6;
 var bug = [];
+var tree;
 
 function preload() {
   buzz = loadSound('assets/music.mp3');
-  click = loadSound('assets/click.wav');
+  tree = loadImage("assets/tree.png");
 }
 
 function setup() {
   createCanvas(windowWidth,windowHeight);
-  for (var i=0; i<20; i++) {
+  for (var i=0; i<75; i++) {
     bug.push(new Walker());
   }
   noStroke();
@@ -17,11 +18,12 @@ function setup() {
 
 function draw() {
   buzz.rate(0.5);
-  background(20);
+  background(25);
   for (var i=0; i<bug.length; i++) {
     bug[i].update();
     bug[i].display();
   }
+  image(tree, 0, 0,width,height);
 }
 
 function Walker() {
@@ -31,7 +33,7 @@ function Walker() {
   this.diameter = 20;
   this.x = noise(xoff) * width;
   this.y = noise(yoff) * height;
-  this.pos = createVector (width / 2, height / 2);
+  this.pos = createVector (random(width/2-200,width/2+200),random(height/2-200,height/2+200));
   this.vel = createVector(noise(xoff) * width,noise(yoff) * height);
   this.vel.mult(0.0001);
   this.col = random(0,255);
@@ -55,16 +57,15 @@ function Walker() {
     this.vel.mult(0.2);
   }
   
-  this.acc.setMag(0.04);
+  this.acc.setMag(0.05);
   this.vel.add(this.acc);
   this.pos.add(this.vel);
   // this.acc.setMag(random(0.001,0.4));
   }
   
   this.display = function () {
-    // ellipse(this.pos.x, this.pos.y, this.diameter, this.diameter);
-    strokeWeight(50)
-    stroke(253, 241, 150,random(0,10));
+    strokeWeight(random(30,40));
+    stroke(253, 241, 150,random(20,30));
     fill(253, 241, 150,10);  
     ellipse(this.pos.x+5, this.pos.y+15, 30, 30);
     noStroke();
