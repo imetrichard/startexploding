@@ -22,7 +22,7 @@ function setup() {
 // Create the array of bugs
 function draw() {
   buzz.rate(0.5);
-  background(25);
+  background(30);
   for (var i=0; i<bug.length; i++) {
     bug[i].update();
     bug[i].display();
@@ -40,11 +40,11 @@ function Walker() {
   this.y = noise(yoff) * height;
   this.pos = createVector (random(width/2-200,width/2+200),random(height/2-200,height/2+200));
   this.size = createVector (random(5,20),random(5,20));
+  this.scaleFactor = random(0.2,1);
   this.vel = createVector(noise(xoff) * width,noise(yoff) * height);
-  this.vel.mult(0.0001);
   this.col = random(0,255);
   this.where = this.pos.x + this.vel.x;
-  this.scaleFactor = random(0.2,1);
+  this.vel.mult(0.0001);
   
   var maxX = width - this.diameter/2-5;
   var maxY = height-height/4 - this.diameter/2-5;
@@ -53,14 +53,15 @@ function Walker() {
   this.update = function (){
   var distance = dist(mouseX,mouseY,this.pos.x,this.pos.y);
   this.acc = p5.Vector.fromAngle(random(TWO_PI));
-  
+
+// Stops it when it hits the screen edge
   if (shouldMove(this.pos, this.vel, minPos+10, maxX-10, maxY-10)) {
     this.pos.x = constrain(this.pos.x + this.vel.x, minPos, maxX);
     this.pos.y = constrain(this.pos.y + this.vel.y, minPos, maxY);
   } else {
     // shouldn't move!
     reverseVector(this.vel);
-    this.vel.sub(this.acc)
+    this.vel.sub(this.acc);
     this.vel.mult(0.2);
   }
   
@@ -68,6 +69,8 @@ function Walker() {
   this.vel.add(this.acc);
   this.pos.add(this.vel);
   }
+  
+// Loads all the pieces  
   
   this.display = function () {
     this.light();
@@ -83,7 +86,7 @@ function Walker() {
     else {fill(254,251,175);}
     ellipse(this.pos.x+5, this.pos.y+15, this.diameter*this.scaleFactor-15*this.scaleFactor, this.diameter*this.scaleFactor-10*this.scaleFactor);
   }
-  
+// The wings. Made from size changing ellipses.
   this.wings = function (){
     noStroke();
     if (this.scaleFactor <=0.3){
@@ -104,13 +107,13 @@ function Walker() {
       ellipse(this.pos.x+10, this.pos.y+14+random(this.vel.y,this.vel.y+2),this.diameter*this.scaleFactor-random(0,10)*this.scaleFactor, this.diameter*this.scaleFactor);
     }
   }
-
+// The light. Used stroke weight to create size effect
   this.light = function (){
     strokeWeight(random(30,40)*this.scaleFactor);
     if (this.scaleFactor <=0.3){
-      stroke(253, 241, 150,random(0,10));  
-    } else if (this.scaleFactor <0.8 && this.scaleFactor >0.3){stroke(253, 241, 150,random(5,10));}
-    else {stroke(253, 241, 150,random(20,30));}
+      stroke(253, 241, 150,random(10,20));  
+    } else if (this.scaleFactor <0.8 && this.scaleFactor >0.3){stroke(253, 241, 150,random(20,30));}
+    else {stroke(253, 241, 150,random(30,40));}
     fill(253, 241, 150,0);  
     ellipse(this.pos.x+5, this.pos.y+15, 20*this.scaleFactor, 20*this.scaleFactor);
   }
