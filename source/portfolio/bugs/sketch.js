@@ -8,8 +8,6 @@ function preload() {
 
 function setup() {
   createCanvas(windowWidth,windowHeight);
-  w = new Walker();
-  c = new Walker();
   for (var i=0; i<1000; i++) {
     bug.push(new Walker());
   }
@@ -33,9 +31,9 @@ function draw() {
 }
 
 function Walker() {
-  // var xoff = 1;
-  // var yoff = 1;
-  // this.diameter = random(10,20);
+  var xoff = 1;
+  var yoff = 1;
+  this.diameter = random(10,20);
   this.diameter = 15;
   this.x = noise(xoff) * width;
   this.y = noise(yoff) * height;
@@ -79,9 +77,6 @@ function Walker() {
     reverseVector(this.vel);
     // this.vel.sub(this.acc)
     this.vel.mult(4);
-  }
-  else {
-    // not colliding
   }
 }
 
