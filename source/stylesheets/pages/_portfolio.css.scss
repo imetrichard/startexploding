@@ -88,6 +88,24 @@
               margin: 25px 0;
             }
           }
+          &.benz {
+            margin-top: 40px;
+            margin-left: 17%;
+            @include breakpoint(mobile) {
+              margin-left: 10px;
+              width: 100%;
+              margin: 25px 0;
+            }
+          }
+          &.nominum {
+            margin-top: 50px;
+            margin-left: 17%;
+            @include breakpoint(mobile) {
+              margin-left: 10px;
+              width: 100%;
+              margin: 25px 0;
+            }
+          }
           &.amoeba {
             height: 150px;
             margin-top: 25px;
