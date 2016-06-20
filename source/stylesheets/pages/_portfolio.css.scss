@@ -31,7 +31,7 @@
       margin-right: auto;
       display: block;
       margin-bottom: 30px;
-      background-color: rgba(0, 0, 0, 0.1);
+      background-color: rgba(0, 0, 0, 0);
       cursor: pointer;
       -webkit-transition: all 0.5s linear;
       -moz-transition: all 0.5s linear;
@@ -44,7 +44,6 @@
       }
 
         &:hover {
-          background-color: rgba(207, 90, 96, 0.3);
           -webkit-transition: all 0.5s linear;
           -moz-transition: all 0.5s linear;
           -o-transition: all 0.5s linear;
@@ -174,7 +173,7 @@
         }
 
         @include breakpoint(tablet) {
-          padding-left: 25px;
+          padding-left: 0px;
         }
 
         em {
@@ -209,7 +208,7 @@
 
     .disabled {
       &:hover {
-        background-color: rgba(0, 0, 0, 0.1);
+        background-color: rgba(0, 0, 0, 0);
       }
     }
   }

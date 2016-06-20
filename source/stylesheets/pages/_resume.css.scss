@@ -22,7 +22,7 @@
   }
 
   .skills, .work, .education {
-    margin-left: 35px;
+    margin-left: 0px;
     display: inline-block;
     vertical-align: top;
     margin-bottom: 35px;
@@ -40,7 +40,7 @@
 
     @include breakpoint(tablet) {
       width: 90%;
-      margin-left: 5%;
+      margin-left: 0;
       margin-right: 5%;
     }
 
