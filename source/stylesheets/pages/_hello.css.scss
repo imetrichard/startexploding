@@ -1,4 +1,5 @@
 #root {
+
   .title {
     text-align: center;
     width: 80%;
@@ -129,7 +130,7 @@
     }
 
     a {
-    color:  $color-peach;
+    color:  $color-blue;
     font-style: normal;
     cursor: pointer;
     -webkit-transition: all 0.25s linear;
@@ -138,7 +139,7 @@
     transition: all 0.25s linear;
 
       &:hover {
-        color: $color-plum;
+        color: lighten($color-blue, 10%);
         -webkit-transition: all 0.25s linear;
         -moz-transition: all 0.25s linear;
         -o-transition: all 0.25s linear;

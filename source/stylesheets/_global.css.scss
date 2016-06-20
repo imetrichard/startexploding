@@ -64,16 +64,15 @@ body, .area {
   background-color: #fff; /* fallback color if gradients are not supported */
 }
 
-#contact  {
-  background: url("/images/bg-y.jpg") no-repeat left center fixed;
-  background-size: cover;
-
-  @include breakpoint(mobile) {
-    background: url("/images/bg-y.jpg") no-repeat center left fixed;
-    background-size: cover;
-  }
-
-}
+//#contact  {
+//  background: url("/images/bg-y.jpg") no-repeat left center fixed;
+//  background-size: cover;
+//
+//  @include breakpoint(mobile) {
+//    background: url("/images/bg-y.jpg") no-repeat center left fixed;
+//    background-size: cover;
+//  }
+//}
 
 ul {
   list-style: none;
@@ -95,17 +94,17 @@ a {
 .clearfix { zoom: 1; }
 
 button {
-  background-color: $color-peach;
-  border: 1px solid darken($color-peach, 10%);
+  background-color: $color-blue;
+  border: 1px solid darken($color-blue, 10%);
 
   &:hover {
-    background-color: lighten($color-peach, 5%);
-    background-color: lighten($color-peach, 10%);
+    background-color: lighten($color-blue, 5%);
+    background-color: lighten($color-blue, 10%);
   }
 
   &:focus {
-    background-color: darken($color-peach, 10%);
-    border: 1px solid darken($color-peach, 20%);
+    background-color: darken($color-blue, 10%);
+    border: 1px solid darken($color-blue, 20%);
   }
 }
 
@@ -133,7 +132,7 @@ a {
   transition: all 0.25s linear;
 
   &:hover {
-    color: $color-peach;
+    color: $color-blue;
     -webkit-transition: all 0.25s linear;
     -moz-transition: all 0.25s linear;
     -o-transition: all 0.25s linear;
