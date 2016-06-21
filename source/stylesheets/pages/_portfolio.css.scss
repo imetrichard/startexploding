@@ -89,7 +89,7 @@
           }
           &.benz {
             margin-top: 40px;
-            margin-left: 17%;
+            margin-left: 12%;
             @include breakpoint(mobile) {
               margin-left: 10px;
               width: 100%;
@@ -116,9 +116,9 @@
             }
           }
           &.fuze {
-            width: 60%;
+            //width: 60%;
             margin-top: 60px;
-            margin-left: 50px;
+            margin-left: 70px;
             @include breakpoint(mobile) {
               margin-left: 10px;
               width: 100%;
