@@ -19,7 +19,8 @@ nav.top-bar {
     }
 
     h1 {
-      padding-left: 0;
+      padding-left: 10px;
+
       @include breakpoint(mobile) {
         padding-left: 10px;
       }

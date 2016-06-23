@@ -23,12 +23,12 @@
 
   .skills, .work, .education {
     margin-left: 0px;
+    width: 45%;
     display: inline-block;
     vertical-align: top;
-    margin-bottom: 35px;
-    margin-top: 20px;
+    margin-bottom: 0px;
+    margin-top: 10px;
     text-align: left;
-    width: 25%;
     padding: 0px 20px;
     background-color: rgba(0, 0, 50, 0.2);
 
@@ -91,13 +91,13 @@
 
     @include breakpoint(tablet) {
     margin-left: 0px;
-  }
+    }
   }
 
   h2.bar {
     border-bottom: solid 5px #fff;
     color: #ffffff;
-    margin-top: 25px;
+    margin-top: 10px;
     margin-bottom: 10px;
     margin-left: 10px;
   }
@@ -111,6 +111,7 @@
   .skills {
     padding-bottom: 40px;
     margin-bottom: 5px;
+    width: 90%;
 
     h2 {
       margin-bottom:15px;
