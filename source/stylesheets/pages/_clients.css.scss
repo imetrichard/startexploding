@@ -110,6 +110,16 @@
               margin: 25px 0;
             }
           }
+          &.walker {
+            height: 200px;
+            margin-top: 5px;
+            margin-left: 20%;
+            @include breakpoint(mobile) {
+              margin-left: 10px;
+              width: 100%;
+              margin: 25px 0;
+            }
+          }
           &.fuze {
             margin-top: 60px;
             height: 40px;
