@@ -1,6 +1,7 @@
 #resume {
   height: auto;
   padding-bottom: 50px;
+  background-color: #2d2d2d;
 
   .title {
     text-align: center;
@@ -30,7 +31,6 @@
     margin-top: 10px;
     text-align: left;
     padding: 0px 20px;
-    background-color: rgba(0, 0, 50, 0.2);
 
     @include breakpoint(mobile) {
       width: 98%;
@@ -95,7 +95,7 @@
   }
 
   h2.bar {
-    border-bottom: solid 5px #fff;
+    border-bottom: solid 1px $color-blue;
     color: #ffffff;
     margin-top: 10px;
     margin-bottom: 10px;

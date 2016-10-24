@@ -54,7 +54,7 @@ body, .area {
 }
 
 #resume  {
-  background-color: black;
+  background-color: #2d2d2d;
 }
 
 #portfolio  {
@@ -151,4 +151,8 @@ em {
 }
 ::-moz-selection {
   background: $color-yellow; /* Gecko Browsers */
+}
+
+.title {
+  color: $color-blue;
 }
