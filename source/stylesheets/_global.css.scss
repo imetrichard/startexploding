@@ -58,22 +58,12 @@ body, .area {
 }
 
 #portfolio  {
-  background-color: #eee;
+  background-color: #fff;
 }
 
 #project  {
   background-color: #fff; /* fallback color if gradients are not supported */
 }
-
-//#contact  {
-//  background: url("/images/bg-y.jpg") no-repeat left center fixed;
-//  background-size: cover;
-//
-//  @include breakpoint(mobile) {
-//    background: url("/images/bg-y.jpg") no-repeat center left fixed;
-//    background-size: cover;
-//  }
-//}
 
 ul {
   list-style: none;

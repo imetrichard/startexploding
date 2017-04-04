@@ -5,14 +5,11 @@ nav.top-bar {
   position: fixed;
 
   .container {
-    width: 50%;
     margin: auto;
-
     @include breakpoint(tablet) {
       margin: 0;
       width: auto;
     }
-
     @include breakpoint(mobile) {
       margin: 0;
       width: auto;
@@ -20,7 +17,6 @@ nav.top-bar {
 
     h1 {
       padding-left: 10px;
-
       @include breakpoint(mobile) {
         padding-left: 10px;
       }

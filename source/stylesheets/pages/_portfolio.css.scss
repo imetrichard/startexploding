@@ -1,6 +1,7 @@
 #portfolio {
   height: auto;
-  padding-bottom: 50px;
+  padding: 40px 0;
+  border-top: solid 5px #eee;
 
   .title {
     text-align: center;
@@ -12,6 +13,11 @@
       color: #fff;
       text-align: center;
       font-size: 32px;
+    }
+    
+    h2 {
+      font-size: 1.7em;
+      color: black;
     }
 
     @include breakpoint(mobile) {
@@ -39,8 +45,9 @@
       transition: all 0.5s linear;
 
       @include breakpoint(mobile) {
-        width: 97%;
+        width: 100%;
         height: auto;
+        padding: 0 40px;
       }
 
         &:hover {
@@ -71,13 +78,23 @@
 
         img {
           width: 300px;
-
           @include breakpoint(mobile) {
             margin-left: 10px;
             width: 100%;
             margin: 25px 0;
           }
 
+         &.nissan {
+            margin-top: 30px;
+            height: 70%;
+            margin-left: 17%;
+            @include breakpoint(mobile) {
+              margin-left: 10px;
+              width: 70%;
+              margin: 25px 0;
+            }
+          }
+            
           &.keiser {
             margin-top: 60px;
             margin-left: 17%;
@@ -88,10 +105,10 @@
             }
           }
           &.benz {
-            margin-top: 40px;
+            width: 80%;
+            margin-top: 70px;
             margin-left: 12%;
-            @include breakpoint(mobile) {
-              margin-left: 10px;
+            @include breakpoint(mobile) {;
               width: 100%;
               margin: 25px 0;
             }
@@ -116,16 +133,16 @@
             }
           }
           &.fuze {
-            //width: 60%;
-            margin-top: 60px;
-            margin-left: 70px;
+            width: 70%;
+            margin-top: 50px;
+            margin-left: 50px;
             @include breakpoint(mobile) {
-              margin-left: 10px;
-              width: 100%;
+              width: 70%;
               margin: 25px 0;
             }
           }
           &.vulume {
+            width: 70%;
             margin-top: 75px;
             margin-left: 15%;
             @include breakpoint(mobile) {
@@ -144,13 +161,24 @@
             }
           }
           &.htf {
+            width: 70%;
             margin-top: 20px;
             margin-left: 15%;
-          @include breakpoint(mobile) {
-            margin-left: 10px;
-            width: 100%;
-            margin: 25px 0;
+            @include breakpoint(mobile) {
+              margin-left: 10px;
+              width: 100%;
+              margin: 25px 0;
+            }
           }
+          &.harley {
+            margin-top: 20px;
+            margin-left: 15%;
+            width: 60%;
+            @include breakpoint(mobile) {
+              margin-left: 10px;
+              width: 80%;
+              margin: 25px 0;
+            }
           }
         }
       }
@@ -168,7 +196,7 @@
           width: 100%;
           line-height: 1;
           float: none;
-          padding: 0 20px 20px;
+          font-size: 18px;
           height: auto;
         }
 
@@ -193,14 +221,13 @@
           @include breakpoint(tablet) {
             line-height: 21px;
           }
-
+          @include breakpoint(mobile) {
+            font-size: 14px;
+            line-height: 1.4;
+            text-align: center;
+          }
           em {
             color: $color-blue;
-          }
-
-          @include breakpoint(mobile) {
-            font-size: 12px;
-            line-height: 1.4;
           }
         }
       }

@@ -107,11 +107,9 @@
     }
 
     header {
-      height: auto;
       margin: 0;
-      position: relative;
+//      position: relative;
       text-align: center;
-      background-color: #eceef3;
 
       .play {
         cursor: pointer;
@@ -121,7 +119,7 @@
           width: 150px;
           height: 150px;
           position: absolute;
-          top: 425px;
+          top: 25%;
           left: 45%;
           opacity: 0.75;
           path {
@@ -132,8 +130,9 @@
             transition: all 0.5s ease-out;
           }
           @include breakpoint(mobile) {
-            position: initial;
-            margin-top: 30px;
+            osition: absolute;
+            top: 15%;
+            left: 125px;
           }
         }
 

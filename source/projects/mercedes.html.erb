@@ -1,0 +1,145 @@
+<body id="project" xmlns="http://www.w3.org/1999/html">
+
+  <div class="work case-study">
+    <header>
+      <div class="play">
+        <a href="https://www.youtube.com/embed/br0r0NH6Bfk?title=0&amp;byline=0&amp;portrait=0&amp;autoplay=1"
+           rel="shadowbox;player=iframe;width=720;height=405" onclick="return true;">
+          <svg version="1.1" id="play" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+               width="100px" height="100px" viewBox="0 0 100 100" enable-background="new 0 0 100 100" xml:space="preserve">
+            <g id="play">
+              <path fill="#CF5A60" d="M50.002,3.162c-25.826,0-46.835,21.009-46.835,46.841c0,25.826,21.009,46.835,46.835,46.835
+      s46.83-21.009,46.83-46.835C96.832,24.171,75.828,3.162,50.002,3.162z M50.002,86.871c-20.36,0-36.875-16.508-36.875-36.868
+      c0-20.369,16.515-36.874,36.875-36.874c20.361,0,36.873,16.505,36.873,36.874C86.875,70.363,70.363,86.871,50.002,86.871z"/>
+              <path fill="#CF5A60" d="M40.563,34.64c-0.829-0.833-2.949-0.833-2.949,0v33.844c0,0.834,2.125,0.834,2.957,0l27.781-15.416
+      c0.832-0.829,0.847-2.178,0.017-3.01L40.563,34.64z"/>
+            </g>
+          </svg>
+        </a>
+      </div>
+    </header>
+
+    <section>
+      <article>
+
+        <%= image_tag("portfolio/mercedes_1.jpg", :alt => "Mercedes Benz") %>
+
+        <h3>Defining the Connected Car Experience</h3>
+
+        <p>   Daimler AG, makers of the Mercedes-Benz, came to our team to conduct research that would illuminate the relationship of a driver with their vehicle. We designed what a transition to and from driving would be in a connected world, while incorporating Data Science to provide predictive functionality. This was one of the first ever connected car projects and premiered at Frankfurt Motor Show.</p>
+
+<!--
+        <%= image_tag("portfolio/sketch_1.jpg", :alt => "Fuze") %>
+
+        <h3>Finding Problems and Working Toward Solutions</h3>
+
+        <p>While we found many opportunities to improve the overall experience for both hosts and presenters, we found
+          some really key issues right off the bat. We heard similar feedback over and over by talking to internal
+          customer facing teams and during field studies: “the join process isn't intuitive," "we're ending up having
+          to troubleshoot and walkthrough people we invite who are using fuze for the first time." A customer survey
+          confirmed this pain point and the design planning process began. We began immediately, sketching at first
+          and then looking at the results across teams, then graduating to paper prototypes and lo-fi testing with
+          internal users. Once we had a path we felt might work, we recruited users from our target user groups (based
+          on created personas) and began watching them use digital prototypes and even iterating between tests; we
+          learned a lot.</p>
+
+        <%= image_tag("portfolio/fuze_2.jpg", :alt => "Fuze") %>
+
+        <p>We ended up implementing the Fuze Green Room: a join process that aimed to be so easy that it didn't require
+          coaching. We were smart about defaults -- we started users with the best settings for productive meetings: HD
+          quality video, VoIP, and audio projection. Adjusting the settings is as simple as a tap or click and, if
+          necessary due to slower connections or device issues, the act of moving the audio to the user’s phone was
+          just a few clicks away. </p>
+
+        <p>
+          We also tackled another pain point for our users -- the resistance to being on video. Using the Green Room
+          they had an in-between state to do what we all want to do before appearing on camera; do I look ok? is my
+          audio working? how do I sound? It didn't end there; after implementation, we examined how the piece fit in
+          holistically with the rest of the app; we looked at how we would adapt what we learned onto not only desktop
+          platforms but also to touch devices, and also what happens when we're implementing on platforms with many
+          more restrictions (as in the case of our browser client). We found an increase in video meetings from 40-67%,
+          and a significant increase in user meeting satisfaction due to face-to-face contact with their remote teams.
+        </p>
+
+        <%= image_tag("portfolio/fuze_5.jpg", :alt => "Fuze") %>
+
+        <h3>Streamlining Processes</h3>
+        <p>
+          A complex and rich application, developed by many teams located across various time zones, leads to another
+          major hurdle: How to ensure the design is implemented correctly and how to communicate our designs’
+          functionality and the look and feel of it to developers. After a few teamwork sessions, working closely with
+          devs and a lot of trial and error, we created the design wiki. Developers could easily locate the full
+          functionality of a feature using it, including viewing deltas between iterations and seeing every state
+          completely,  every icon name, and callouts on how they could recreate elements
+          in code. We also made ourselves completely available to devs, and began working the way they worked --
+          adopting a workflow that was in line with theirs in Jira. Unsure what a feature involved? Let's get together
+          and do a quick walkthrough and Q&A session. Does the design not work from a dev perspective? Let's get together
+          and find out how we can accomplish our goals given new dev restrictions. It’s highly collaborative and
+          continues to be the way we do things long after the apps are shipped.
+        </p>
+
+
+        <h3>Browser Experience</h3>
+
+        <p>
+          Not long after the native clients launched, I helped lead the charge on a rich HTML5 experience using the
+          power of webRTC, a technology that allows for audio and video meetings to happen from the comfort of the
+          user's browser, and without a heavyweight download: a key to get attendees in fast. However, this presented
+          new challenges of web restrictions and how to optimize for a web experience while at the same time working to
+          keep consistent with the look, feel, and interaction model of the desktop native apps. Another challenge was
+          that the dev team charged with implementing the browser experience was thousands of miles away in Bulgaria,
+          which tested the true strength of Fuze as a collaboration platform. It still led to early mornings, late
+          nights, quick turnaround, and edifying experience (as well as a two-week heads-down work session in Sofia,
+          Bulgaria) that ultimately led to the Fuze HTML5 Browser client: a fast and easy way for attendees to join a
+          Fuze meeting.
+        </p>
+
+        <%= image_tag("portfolio/fuze_3.jpg", :alt => "Fuze") %>
+
+        <p>
+          The work continues to this day with improvements to the application to be the best it can be for the users
+          and through the development of new features to ensure Fuze stays an important tool in the workflow of teams
+          today and in years to come.
+        </p>
+-->
+      </article>
+    </section>
+
+    <footer>
+      <div class="previous">
+        <a href="../../index.html#portfolio">See All Projects</a>
+      </div>
+      <div class="contact">
+        <h1>Want to hear more about this project?</h1>
+        <a href="mailto:richardenlow@gmail.com?subject=Hello Richard!" target="_blank">
+          <button>Let's Connect</button>
+        </a>
+      </div>
+      <div class="next">
+        <a href="fuze.html">See Next Project</a>
+      </div>
+    </footer>
+
+  </div>
+</body>
+
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+  ga('create', 'UA-42734287-1', 'herokuapp.com');
+  ga('send', 'pageview');
+
+</script>
+
+<script>
+  document.write('<script src=/javascripts/vendor/'
+    + ('__proto__' in {} ? 'zepto' : 'jquery')
+    + '.js><\/script>');
+</script>
+
+<script>
+  $(document).foundation();
+</script>
