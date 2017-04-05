@@ -1,7 +1,7 @@
 #project{
   height: auto;
   padding-bottom: 50px;
-
+  
   img {
     width: 100%;
     margin: 10px auto;
@@ -45,11 +45,17 @@
       padding: 0;
       text-transform: none;
     }
-
+    
     h1 {
-      color: #f8f8ff;
+      color: #333;
       text-transform: uppercase;
       font-size: 42px;
+      font-weight: 400;
+      margin-top: 10px;
+      @include breakpoint(mobile) {
+        font-size: 28px;
+        text-align: center
+      }
     }
 
     h2 {
@@ -119,9 +125,10 @@
           width: 150px;
           height: 150px;
           position: absolute;
-          top: 25%;
+          top: 5.5%;
           left: 45%;
           opacity: 0.75;
+          
           path {
             fill: $color-white;
             -webkit-transition: all 0.5s ease-out;
@@ -130,9 +137,11 @@
             transition: all 0.5s ease-out;
           }
           @include breakpoint(mobile) {
-            osition: absolute;
-            top: 15%;
-            left: 125px;
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            top: 2.75%;
+            left: 150px;
           }
         }
 
@@ -145,6 +154,17 @@
             transition: all 0.5s ease-in;
           }
         }
+      }
+      
+      svg.lower {
+        top: 25%;
+        @include breakpoint(mobile) {
+            position: absolute;
+            width: 100px;
+            height: 100px;
+            top: 13%;
+            left: 150px;
+          }
       }
 
       .info {
@@ -178,7 +198,7 @@
     section {
       background-color: rgba(0,0,0,0);
       padding: 10px 10%;
-      margin-bottom: 150px;
+      margin-bottom: 50px;
       @include breakpoint(mobile) {
         padding: 0px;
         margin-bottom: 150px;
