@@ -4,6 +4,7 @@
   
   img {
     width: 100%;
+    max-width: 1200px;
     margin: 10px auto;
 
     &.small {
@@ -67,7 +68,7 @@
 
     h3 {
       font-weight: 600;
-      font-size: 16px;
+      font-size: 21px;
       margin-top: 15px;
 
       @include breakpoint(mobile) {
@@ -107,6 +108,7 @@
   .case-study {
     width: 100%;
     padding-top: 45px;
+    max-width: 1500px;
 
     h3 {
       margin-top: 0;
@@ -114,11 +116,11 @@
 
     header {
       margin: 0;
-//      position: relative;
       text-align: center;
 
       .play {
         cursor: pointer;
+
         svg {
           background-color: rgba(0,0,0,0.5);
           border-radius: 200px;
