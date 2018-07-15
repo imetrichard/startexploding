@@ -28,8 +28,10 @@
   }
 
   #case-studies {
-    max-width: 1500px;
     padding-top: 25px;
+    max-width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
 
     .case {
       width: 85%;
