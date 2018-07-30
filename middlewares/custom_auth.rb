@@ -10,7 +10,7 @@ class CustomAuth
     request = Rack::Request.new(env)
     params = request.params
 
-    if request.path.start_with?('/projects') && !request.session[:logged_in]
+    if request.path.start_with?('/projects/details') && !request.session[:logged_in]
       request.session[:path] = request.path
       redirect '/login.html'
 
